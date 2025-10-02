@@ -1,0 +1,8 @@
+{
+  "class_name": "noninv",
+  "key": "noninv-shap-5000x36-eeccd91f401ad367ae49a157",
+  "n_samples": 5000,
+  "random_state": 42,
+  "store_X": true,
+  "dtype": "float32"
+}

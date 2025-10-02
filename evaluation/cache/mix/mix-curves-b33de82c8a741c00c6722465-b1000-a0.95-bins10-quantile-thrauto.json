@@ -1,0 +1,11 @@
+{
+  "class_name": "mix",
+  "key": "mix-curves-b33de82c8a741c00c6722465-b1000-a0.95-bins10-quantile-thrauto",
+  "do_bootstrap": true,
+  "bootstrap_iterations": 1000,
+  "bootstrap_alpha": 0.95,
+  "cal_n_bins": 10,
+  "cal_strategy": "quantile",
+  "dca_thresholds": null,
+  "dca_smoothing_sigma": 1.0
+}

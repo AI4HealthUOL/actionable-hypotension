@@ -1,0 +1,16 @@
+{
+  "class_name": "noninv",
+  "key": "noninv-curves-f5b7f294d522dea88735ba95-b1000-a0.95-bins10-quantile-thrd7627d864aa6eccdfcbb080e",
+  "do_bootstrap": true,
+  "bootstrap_iterations": 1000,
+  "bootstrap_alpha": 0.95,
+  "cal_n_bins": 10,
+  "cal_strategy": "quantile",
+  "dca_thresholds": {
+    "n": 200,
+    "hash": "d7627d864aa6eccdfcbb080e",
+    "min": 0.0,
+    "max": 0.06
+  },
+  "dca_smoothing_sigma": 1.0
+}

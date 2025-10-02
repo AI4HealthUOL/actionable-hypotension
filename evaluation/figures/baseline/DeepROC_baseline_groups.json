@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "class_name": "baseline",
+    "probs_file": "probs/baseline/probs.pkl",
+    "n_test": 1116130,
+    "n_pos": 2212,
+    "n_neg": 1113918,
+    "prevalence": 0.0019818479926173474,
+    "tpr_groups": [
+      [
+        0.75,
+        0.85
+      ]
+    ],
+    "deeproc_runtime_sec": 14340.7,
+    "source_table": "baseline_loader",
+    "model_path": "../models/calibrated/baseline_lr.pkl",
+    "timestamp_probs": "2025-09-01 20:30:36"
+  },
+  "groups": [
+    {
+      "C_i": 0.08947999070396462,
+      "C_area_y": 0.13725891726532913,
+      "C_area_x": 0.0417010641426001,
+      "Cn_i": 0.6597248134859298,
+      "Cn_avgSens": 0.8014436423904884,
+      "Cn_avgSpec": 0.4170106414260009,
+      "C_local": 0.5144364238827133,
+      "Uy_count": 338204135.0684223,
+      "Ux_count": 102750863.92032416,
+      "AUC_i": 0.08947999070357493,
+      "pAUC": 0.13725891726492434,
+      "pAUCx": 0.04170106414222551,
+      "AUCn_i": 0.6597248134830568,
+      "pAUCn": 0.8014436423881245,
+      "pAUCxn": 0.4170106414222552,
+      "avgSens": 0.8014436423881284,
+      "avgSpec": 0.4170106414222569,
+      "avgPPV": 0.002724773978649062,
+      "avgNPV": 0.9990521668952791,
+      "avgLRp": NaN,
+      "avgLRn": NaN,
+      "bAvgA": 0.6597248134830598,
+      "avgOR": NaN,
+      "avgA": 0.4158960645499311,
+      "avgBA": 0.6081805492212989,
+      "sPA": 0.7605089701379721
+    }
+  ]
+}

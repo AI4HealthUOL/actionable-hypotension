@@ -1,0 +1,8 @@
+{
+  "class_name": "mix",
+  "key": "mix-shap-5000x36-dea800383f0fe132de7c79f4",
+  "n_samples": 5000,
+  "random_state": 42,
+  "store_X": true,
+  "dtype": "float32"
+}

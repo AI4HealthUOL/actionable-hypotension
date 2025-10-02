@@ -1,0 +1,8 @@
+{
+  "class_name": "inv",
+  "key": "inv-shap-5000x36-2815e9a41c0eabef8e6b1a0f",
+  "n_samples": 5000,
+  "random_state": 42,
+  "store_X": true,
+  "dtype": "float32"
+}
