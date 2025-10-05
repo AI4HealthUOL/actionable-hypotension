@@ -1,6 +1,11 @@
 # Predicting Catecholamine Therapy Initiation
 
-Repository with datasets and models from our paper: *"Towards actionable hypotension prediction: Predicting catecholamine therapy initiation in the intensive care unit"*.
+Repository with datasets and models from our paper: *"Towards actionable hypotension prediction: Predicting catecholamine therapy initiation in the intensive care unit"*. 
+There we demonstrate the feasibility of predicting catecholamine therapy initiation using MAP measurements and additional clinical variables with robust overall model performance.
+
+
+![Figure cannot be loaded.](MAP-Feature-Extraction/.png)
+
 
 ## Setup
 
