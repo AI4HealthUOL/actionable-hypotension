@@ -4,7 +4,7 @@ Repository with datasets and models from our paper: *"Towards actionable hypoten
 There we demonstrate the feasibility of predicting catecholamine therapy initiation using MAP measurements and additional clinical variables with robust overall model performance.
 
 
-![Figure cannot be loaded.](MAP-Feature-Extraction/.png)
+![Date flowgraph](figures/MAP-Feature-Extraction/.png)
 
 
 ## Setup
