@@ -14,8 +14,8 @@ We demonstrate the feasibility of predicting catecholamine therapy initiation us
 1. **Clone this repository**
 
    ```bash
-   git clone https://github.com/AI4HealthUOL/predicting-catecholamine-therapy-initiation.git
-   cd predicting-catecholamine-therapy-initiation
+   git clone https://github.com/AI4HealthUOL/actionable-hypotension.git
+   cd actionable-hypotension
    ```
 
 2. **Install dependencies**
