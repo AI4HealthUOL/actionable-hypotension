@@ -13,40 +13,47 @@ We demonstrate the feasibility of predicting catecholamine therapy initiation us
 
 1. **Clone this repository**
 
-   ```bash
-   git clone https://github.com/AI4HealthUOL/actionable-hypotension.git
-   cd actionable-hypotension
-   ```
+    ```bash
+    git clone https://github.com/AI4HealthUOL/actionable-hypotension.git
+    cd actionable-hypotension
+    ```
 
 2. **Install dependencies**
+    
+    **pip**
+      ```bash
+      pip install -r requirements.txt
+      ```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+    **Conda (managed environment)** → *alternative, don’t install both*
+      ```bash
+      conda env create -f environment.yml
+      conda activate actionable-hypotension
+      ```
+
 
 3. **Install project modules (editable / dev mode)**
 
-   ```bash
-   pip install -e .
-   ```
+    ```bash
+    pip install -e .
+    ```
 
 4. **Set up MIMIC-III in Postgres**<br>
-   Follow the official [MIT-LCP buildmimic/postgres instructions](https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iii/buildmimic/postgres).
-
-   > These instructions also cover how to **download the MIMIC-III CSVs from PhysioNet** and load them into Postgres.
+    Follow the official [MIT-LCP buildmimic/postgres instructions](https:/  github.com/MIT-LCP/mimic-code/tree/main/mimic-iii/buildmimic/postgres).  
+    > These instructions also cover how to **download the MIMIC-III CSVs  from PhysioNet** and load them into Postgres.
 
 5. **Configure database connection**<br>
-   Copy the env template `.env.example` → `.env` and set **exactly one** `DATABASE_URI` (no quotes):
+    Copy the env template `.env.example` → `.env` and set **exactly one**  `DATABASE_URI` (no quotes):
 
-   ```bash
-   cp .env.example .env
-   ```
+    ```bash
+    cp .env.example .env
+    ```
 
-   Example:
+    Example:
 
-   ```
-   DATABASE_URI=postgresql+psycopg2://USERNAME:PASSWORD@HOST:PORT/DBNAME
-   ```
+    ```
+    DATABASE_URI=postgresql+psycopg2://USERNAME:PASSWORD@HOST:PORT/DBNAME
+    ```
 
 ## Usage
 
