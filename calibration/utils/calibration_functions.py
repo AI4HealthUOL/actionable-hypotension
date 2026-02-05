@@ -1,16 +1,34 @@
 import os
+import sys
 import numpy as np
 import pandas as pd
 from sklearn.isotonic import IsotonicRegression
 import xgboost as xgb
-from utils.db_interface import get_engine
-from calibration.utils.calibrated_xgb_model import CalibratedXGBModel
+
+#sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension/calibration')
+sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension/utils')
+
+print("CWD:", os.getcwd())
+print("\n--- sys.path ---")
+for p in sys.path:
+    print(p)
+
+from db_interface import get_engine
+from utils.calibrated_xgb_model import CalibratedXGBModel
 import joblib
 
 UNCALIBRATED_MODELS_DIR = "../models/uncalibrated"
 CALIBRATED_MODELS_DIR = "../models/calibrated"
 
 def load_and_prepare_validation_data(table_name, drop_treatment_given=False, drop_only_2_values=False):
+    
+    print("CWD:", os.getcwd())
+    print("\n--- sys.path ---")
+    for p in sys.path:
+        print(p)
+    
+    
+
     engine = get_engine()
     df = pd.read_sql(f"""
         SELECT * FROM ce_approach.{table_name}
