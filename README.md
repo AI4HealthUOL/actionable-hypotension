@@ -74,9 +74,10 @@ Run the SQL files in order:
 * **context_windows**
 
   * `linkorder_treatment_events.sql`
-  * `additional_meds_in_windows.sql`
   * `all_mv_context_target_windows.sql`
   * `all_mv_labeled_windows.sql`
+  * `additional_meds_in_windows.sql`
+  
 
 * **map_values**
 
