@@ -2,7 +2,7 @@
 -- Dynamically handles any source/target table pair by physically ordering by icustay_id and context_start,
 -- adding a row_id surrogate, and batching per range to limit memory usage and enforce transactional boundaries.
 -- Produces: mean, median, min, max, std, IQR, first/last values, rate of change, slope, weighted mean, and a two‑value flag.
-CREATE OR REPLACE PROCEDURE ce_approach.compute_window_stats(
+CREATE OR REPLACE PROCEDURE public.compute_window_stats(
   src_table  TEXT,
   tgt_table  TEXT,
   chunk_size INTEGER DEFAULT 10000  -- Number of rows to process per batch
@@ -166,20 +166,9 @@ END;
 $$;
 
 
--- compute statistical features of invasive_windows
-CALL ce_approach.compute_window_stats(
-  'ce_approach.invasive_windows',
-  'ce_approach.invasive_windows_statistical_features'
-);
-
--- compute statistical features of noninvasive_windows
-CALL ce_approach.compute_window_stats(
-  'ce_approach.noninvasive_windows',
-  'ce_approach.noninvasive_windows_statistical_features'
-);
 
 -- compute statistical features of mix_windows
-CALL ce_approach.compute_window_stats(
-  'ce_approach.mix_windows',
-  'ce_approach.mix_windows_statistical_features'
+CALL public.compute_window_stats(
+  'public.mix_windows',
+  'public.mix_windows_statistical_features'
 );
