@@ -64,15 +64,18 @@ JOIN map_agg m
  AND aw.context_start_offset_min = m.context_start
  AND aw.context_end_offset_min = m.context_end;
 
+# remove 8 rows where we ended up with value count lower than 2 
+DELETE FROM public.mix_windows
+WHERE value_count_filtered < 2;
 
 -- Remove obsolete columns
-ALTER TABLE ce_approach.mix_windows
+ALTER TABLE public.mix_windows
 DROP COLUMN value_count,
-DROP COLUMN map_values;
+DROP COLUMN ma_values_csv;
 
 -- Rename the filtered columns to standard names (as in the original)
-ALTER TABLE ce_approach.mix_windows
+ALTER TABLE public.mix_windows
 RENAME COLUMN map_values_filtered TO map_values;
 
-ALTER TABLE ce_approach.mix_windows
+ALTER TABLE public.mix_windows
 RENAME COLUMN value_count_filtered TO value_count;
