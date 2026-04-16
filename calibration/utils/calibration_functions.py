@@ -5,20 +5,25 @@ import pandas as pd
 from sklearn.isotonic import IsotonicRegression
 import xgboost as xgb
 
-#sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension/calibration')
-sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension/utils')
+from sqlalchemy import create_engine
+
+sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension/calibration')
+sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension')
 
 print("CWD:", os.getcwd())
 print("\n--- sys.path ---")
 for p in sys.path:
     print(p)
 
-from db_interface import get_engine
-from utils.calibrated_xgb_model import CalibratedXGBModel
+
+from calibration.utils.calibrated_xgb_model import CalibratedXGBModel
 import joblib
 
-UNCALIBRATED_MODELS_DIR = "../models/uncalibrated"
-CALIBRATED_MODELS_DIR = "../models/calibrated"
+# UNCALIBRATED_MODELS_DIR = "../models/uncalibrated"
+# CALIBRATED_MODELS_DIR = "../models/calibrated"
+
+UNCALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/models_given/uncalibrated"
+CALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/extended_evaluation_review/models_calibrated_unbundled"
 
 def load_and_prepare_validation_data(table_name, drop_treatment_given=False, drop_only_2_values=False):
     
@@ -29,7 +34,8 @@ def load_and_prepare_validation_data(table_name, drop_treatment_given=False, dro
     
     
 
-    engine = get_engine()
+    DATABASE_URI = "postgresql+psycopg2://rirg2545@localhost:5434/mimic"
+    engine = create_engine(DATABASE_URI, future=True)
     df = pd.read_sql(f"""
         SELECT * FROM ce_approach.{table_name}
         WHERE split IN ('val', 'test')
@@ -99,3 +105,40 @@ def load_calibrate_and_save_model(model_name, table_name, drop_treatment_given=F
     calibrated_model = CalibratedXGBModel(uncalibrated_model, iso)
     
     joblib.dump(calibrated_model, os.path.join(CALIBRATED_MODELS_DIR, f"{model_name}.pkl"))
+
+
+
+def load_calibrate_and_save_model_unbundled(
+    model_name,
+    table_name,
+    drop_treatment_given=False,
+    drop_only_2_values=False
+):
+    # --- Load validation data ---
+    x_val, y_val = load_and_prepare_validation_data(
+        table_name,
+        drop_treatment_given=drop_treatment_given,
+        drop_only_2_values=drop_only_2_values
+    )
+
+    # --- Load uncalibrated model (JSON = good) ---
+    model_path = os.path.join(UNCALIBRATED_MODELS_DIR, f"{model_name}.json")
+    booster = xgb.Booster()
+    booster.load_model(model_path)
+
+    # --- Predict ---
+    dval = xgb.DMatrix(x_val)
+    y_val_pred = booster.predict(dval)
+
+    # --- Calibrate ---
+    from sklearn.isotonic import IsotonicRegression
+    iso = IsotonicRegression(out_of_bounds="clip")
+    iso.fit(y_val_pred, y_val)
+
+    # --- Save ONLY calibration ---
+    joblib.dump(
+        iso,
+        os.path.join(CALIBRATED_MODELS_DIR, f"{model_name}_calibrator.pkl")
+    )
+
+    print(f"Saved calibrator for {model_name}")

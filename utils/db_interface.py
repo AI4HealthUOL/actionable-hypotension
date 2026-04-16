@@ -25,8 +25,8 @@ def get_database_uri() -> str:
         raise MissingDatabaseURI(
             "DATABASE_URI is not set.\n\n"
             "Please define it via environment or a .env file. Examples:\n"
-            "  export DATABASE_URI='postgresql+psycopg2://user:pass@localhost:5432/mimic'\n"
-            "  export DATABASE_URI='postgresql+psycopg2://user@/mimic?host=/tmp&port=5432'  # UNIX socket\n\n"
+            "  export DATABASE_URI='postgresql+psycopg2://user:pass@localhost:5434/mimic'\n"
+            "  export DATABASE_URI='postgresql+psycopg2://user@/mimic?host=/tmp&port=5434'  # UNIX socket\n\n"
             "If you intentionally want a local SQLite dev DB, set:\n"
             "  export DATABASE_URI='sqlite:///local.db'\n"
         )

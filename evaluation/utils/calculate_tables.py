@@ -151,7 +151,8 @@ def rates_from_counts(tp, fp, tn, fn):
     spec = _safe_div(tn, tn + fp)
     ppv  = _safe_div(tp, tp + fp)
     npv  = _safe_div(tn, tn + fn)
-    return float(sens), float(spec), float(ppv), float(npv)
+    f1   = _safe_div(2 * tp, 2 * tp + fp + fn)  # add this
+    return float(sens), float(spec), float(ppv), float(npv), float(f1)
 
 # -------------------------------------------
 # Bootstrap CI for fixed-threshold statistics
@@ -167,15 +168,15 @@ def bootstrap_ci_fixed_threshold(
     y_prob = _ensure_1d(y_prob)
     n = len(y_true)
 
-    tpL=[]; fpL=[]; tnL=[]; fnL=[]
+    tpL=[]; fpL=[]; tnL=[]; fnL=[]; f1L = []  # add this list
     sensL=[]; specL=[]; ppvL=[]; npvL=[]
     for _ in range(n_boot):
         idx = rng.integers(0, n, n)
         yt = y_true[idx]; yp = y_prob[idx]
         tp, fp, tn, fn = counts_at_threshold(yt, yp, thr, rule=rule)
         tpL.append(tp); fpL.append(fp); tnL.append(tn); fnL.append(fn)
-        s, c, p, n_ = rates_from_counts(tp, fp, tn, fn)
-        sensL.append(s); specL.append(c); ppvL.append(p); npvL.append(n_)
+        s, c, p, n_, f1 = rates_from_counts(tp, fp, tn, fn)
+        sensL.append(s); specL.append(c); ppvL.append(p); npvL.append(n_); f1L.append(f1)  # collect it
 
     lo_q = (1 - alpha) / 2 * 100
     hi_q = (alpha + (1 - alpha) / 2) * 100
@@ -186,7 +187,7 @@ def bootstrap_ci_fixed_threshold(
 
     return dict(
         TP_ci=q(tpL), FP_ci=q(fpL), TN_ci=q(tnL), FN_ci=q(fnL),
-        Sens_ci=q(sensL), Spec_ci=q(specL), PPV_ci=q(ppvL), NPV_ci=q(npvL)
+        Sens_ci=q(sensL), Spec_ci=q(specL), PPV_ci=q(ppvL), NPV_ci=q(npvL), F1_ci=q(f1L)   # add to return dict
     )
 
 # -----------------------------------------
@@ -261,10 +262,10 @@ def table_thresholds_for_targets(
             y_sel, y_sel_pred, t, strategy=strategy, rule=rule
         )
         tp, fp, tn, fn = counts_at_threshold(y_eval, y_eval_pred, thr, rule=rule)
-        sens, spec, ppv, npv = rates_from_counts(tp, fp, tn, fn)
+        sens, spec, ppv, npv, f1 = rates_from_counts(tp, fp, tn, fn)
 
         row = dict(ThresholdType=f"{t:.2f}", Target=t,
-                   Sens=sens, Spec=spec, PPV=ppv, NPV=npv, Thr=thr,
+                   Sens=sens, Spec=spec, PPV=ppv, NPV=npv, F1=f1, Thr=thr,
                    Sens_selected=sens_sel)
 
         if include_interpolated:
@@ -276,12 +277,12 @@ def table_thresholds_for_targets(
     if include_youden:
         thr, _, _ = get_youden_threshold(y_sel, y_sel_pred)
         tp, fp, tn, fn = counts_at_threshold(y_eval, y_eval_pred, thr, rule=rule)
-        sens, spec, ppv, npv = rates_from_counts(tp, fp, tn, fn)
+        sens, spec, ppv, npv, f1 = rates_from_counts(tp, fp, tn, fn)
         rows.append(dict(ThresholdType="Youden", Target=np.nan,
-                         Sens=sens, Spec=spec, PPV=ppv, NPV=npv, Thr=thr,
+                         Sens=sens, Spec=spec, PPV=ppv, NPV=npv, F1=f1, Thr=thr,
                          Sens_selected=np.nan))
 
-    cols = ["ThresholdType","Target","Sens","Spec","PPV","NPV","Thr","Sens_selected"]
+    cols = ["ThresholdType","Target","Sens","Spec","PPV","NPV", "F1","Thr","Sens_selected"]
     if include_interpolated:
         cols += ["Interp_thr_hi","Interp_thr_lo","Interp_mix","Interp_Sens"]
     return pd.DataFrame(rows, columns=cols)
@@ -345,7 +346,7 @@ def table_performance_metrics_with_ci(
     auc  = roc_auc_score(y_test, y_test_pred)
     ap   = average_precision_score(y_test, y_test_pred)
     tp, fp, tn, fn = counts_at_threshold(y_test, y_test_pred, thr, rule=rule)
-    sens, spec, ppv, npv = rates_from_counts(tp, fp, tn, fn)
+    sens, spec, ppv, npv, f1 = rates_from_counts(tp, fp, tn, fn)
     brier = brier_score_loss(y_test, y_test_pred)
     ece, slope, intercept = calibration_stats(y_test, y_test_pred, n_bins=cal_n_bins, strategy=cal_strategy)
     prevalence = float(np.mean(y_test))
@@ -361,6 +362,7 @@ def table_performance_metrics_with_ci(
         dict(Metric="Specificity (95% CI) ↑", Point=spec, CI_low=cis_fixed["Spec_ci"][0], CI_high=cis_fixed["Spec_ci"][1]),
         dict(Metric="PPV (95% CI) ↑",    Point=ppv,  CI_low=cis_fixed["PPV_ci"][0],  CI_high=cis_fixed["PPV_ci"][1]),
         dict(Metric="NPV (95% CI) ↑",    Point=npv,  CI_low=cis_fixed["NPV_ci"][0],  CI_high=cis_fixed["NPV_ci"][1]),
+        dict(Metric="F1 Score (95% CI) ↑", Point=f1, CI_low=cis_fixed["F1_ci"][0], CI_high=cis_fixed["F1_ci"][1]),
         dict(Metric="Brier Score ↓",     Point=brier, CI_low=np.nan, CI_high=np.nan),
         dict(Metric="Calibration Slope → 1", Point=slope, CI_low=np.nan, CI_high=np.nan),
         dict(Metric="Calibration Intercept → 0", Point=intercept, CI_low=np.nan, CI_high=np.nan),

@@ -1,3 +1,4 @@
+-- Active: 1770284354672@@127.0.0.1@5433@eicu
 
 -- Context: What data has to be merged? 
 -- One of those tables as base: mix windows_statistical_features | invasive windows_statistical_features | noninvasive_windows_statistical_features (those are on the granularity of context_windows)

@@ -1,0 +1,3402 @@
+Subgroup: ethnicity_bin == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 830833
+  → AUC = 0.863
+  → Sensitivity (TPR) = 0.870
+  → Specificity (TNR) = 0.703
+  → Confusion Matrix:
+[[582595 246657]
+ [   206   1375]]
+
+Subgroup: ethnicity_bin == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 94710
+  → AUC = 0.862
+  → Sensitivity (TPR) = 0.862
+  → Specificity (TNR) = 0.687
+  → Confusion Matrix:
+[[64911 29582]
+ [   30   187]]
+
+Subgroup: ethnicity_bin == 2 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 35484
+  → AUC = 0.847
+  → Sensitivity (TPR) = 0.706
+  → Specificity (TNR) = 0.789
+  → Confusion Matrix:
+[[27975  7475]
+ [   10    24]]
+
+Subgroup: ethnicity_bin == 3 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 25157
+  → AUC = 0.822
+  → Sensitivity (TPR) = 0.750
+  → Specificity (TNR) = 0.721
+  → Confusion Matrix:
+[[18092  7005]
+ [   15    45]]
+
+Subgroup: ethnicity_bin == 4 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 129946
+  → AUC = 0.819
+  → Sensitivity (TPR) = 0.811
+  → Specificity (TNR) = 0.657
+  → Confusion Matrix:
+[[85220 44404]
+ [   61   261]]
+
+Subgroup: age_bin == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 250047
+  → AUC = 0.878
+  → Sensitivity (TPR) = 0.813
+  → Specificity (TNR) = 0.793
+  → Confusion Matrix:
+[[198112  51630]
+ [    57    248]]
+
+Subgroup: age_bin == 2 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 285298
+  → AUC = 0.847
+  → Sensitivity (TPR) = 0.827
+  → Specificity (TNR) = 0.709
+  → Confusion Matrix:
+[[201869  82841]
+ [   102    486]]
+
+Subgroup: age_bin == 3 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 277618
+  → AUC = 0.850
+  → Sensitivity (TPR) = 0.887
+  → Specificity (TNR) = 0.650
+  → Confusion Matrix:
+[[180073  96866]
+ [    77    602]]
+
+Subgroup: age_bin == 4 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 303167
+  → AUC = 0.847
+  → Sensitivity (TPR) = 0.866
+  → Specificity (TNR) = 0.657
+  → Confusion Matrix:
+[[198739 103786]
+ [    86    556]]
+
+Subgroup: height_bin == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 184555
+  → AUC = 0.832
+  → Sensitivity (TPR) = 0.859
+  → Specificity (TNR) = 0.634
+  → Confusion Matrix:
+[[116742  67388]
+ [    60    365]]
+
+Subgroup: height_bin == 2 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 224324
+  → AUC = 0.846
+  → Sensitivity (TPR) = 0.857
+  → Specificity (TNR) = 0.659
+  → Confusion Matrix:
+[[147488  76362]
+ [    68    406]]
+
+Subgroup: height_bin == 3 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 126717
+  → AUC = 0.859
+  → Sensitivity (TPR) = 0.873
+  → Specificity (TNR) = 0.661
+  → Confusion Matrix:
+[[83554 42856]
+ [   39   268]]
+
+Subgroup: height_bin == 4 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 580534
+  → AUC = 0.866
+  → Sensitivity (TPR) = 0.846
+  → Specificity (TNR) = 0.744
+  → Confusion Matrix:
+[[431009 148517]
+ [   155    853]]
+
+Subgroup: weight_bin == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 276840
+  → AUC = 0.849
+  → Sensitivity (TPR) = 0.839
+  → Specificity (TNR) = 0.710
+  → Confusion Matrix:
+[[196316  80021]
+ [    81    422]]
+
+Subgroup: weight_bin == 2 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 284700
+  → AUC = 0.859
+  → Sensitivity (TPR) = 0.847
+  → Specificity (TNR) = 0.690
+  → Confusion Matrix:
+[[196053  88104]
+ [    83    460]]
+
+Subgroup: weight_bin == 3 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 238730
+  → AUC = 0.850
+  → Sensitivity (TPR) = 0.855
+  → Specificity (TNR) = 0.693
+  → Confusion Matrix:
+[[165069  73109]
+ [    80    472]]
+
+Subgroup: weight_bin == 4 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 315860
+  → AUC = 0.865
+  → Sensitivity (TPR) = 0.873
+  → Specificity (TNR) = 0.702
+  → Confusion Matrix:
+[[221355  93889]
+ [    78    538]]
+
+Subgroup: bmi_bin == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 172941
+  → AUC = 0.838
+  → Sensitivity (TPR) = 0.863
+  → Specificity (TNR) = 0.659
+  → Confusion Matrix:
+[[113653  58923]
+ [    50    315]]
+
+Subgroup: bmi_bin == 2 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 189460
+  → AUC = 0.833
+  → Sensitivity (TPR) = 0.842
+  → Specificity (TNR) = 0.646
+  → Confusion Matrix:
+[[122002  66984]
+ [    75    399]]
+
+Subgroup: bmi_bin == 3 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 187318
+  → AUC = 0.832
+  → Sensitivity (TPR) = 0.858
+  → Specificity (TNR) = 0.647
+  → Confusion Matrix:
+[[120949  65898]
+ [    67    404]]
+
+Subgroup: bmi_bin == 4 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 566411
+  → AUC = 0.877
+  → Sensitivity (TPR) = 0.856
+  → Specificity (TNR) = 0.747
+  → Confusion Matrix:
+[[422189 143318]
+ [   130    774]]
+
+Subgroup: obesity == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 1011191
+  → AUC = 0.855
+  → Sensitivity (TPR) = 0.854
+  → Specificity (TNR) = 0.700
+  → Confusion Matrix:
+[[706417 302748]
+ [   296   1730]]
+
+Subgroup: obesity == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 104939
+  → AUC = 0.868
+  → Sensitivity (TPR) = 0.862
+  → Specificity (TNR) = 0.691
+  → Confusion Matrix:
+[[72376 32375]
+ [   26   162]]
+
+Subgroup: hypertension == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 463624
+  → AUC = 0.857
+  → Sensitivity (TPR) = 0.852
+  → Specificity (TNR) = 0.707
+  → Confusion Matrix:
+[[327179 135622]
+ [   122    701]]
+
+Subgroup: hypertension == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 652506
+  → AUC = 0.855
+  → Sensitivity (TPR) = 0.856
+  → Specificity (TNR) = 0.694
+  → Confusion Matrix:
+[[451614 199501]
+ [   200   1191]]
+
+Subgroup: diabetes == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 775809
+  → AUC = 0.860
+  → Sensitivity (TPR) = 0.851
+  → Specificity (TNR) = 0.715
+  → Confusion Matrix:
+[[553719 220629]
+ [   217   1244]]
+
+Subgroup: diabetes == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 340321
+  → AUC = 0.847
+  → Sensitivity (TPR) = 0.861
+  → Specificity (TNR) = 0.663
+  → Confusion Matrix:
+[[225074 114494]
+ [   105    648]]
+
+Subgroup: kidney_disease == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 871074
+  → AUC = 0.861
+  → Sensitivity (TPR) = 0.848
+  → Specificity (TNR) = 0.719
+  → Confusion Matrix:
+[[624948 244476]
+ [   250   1400]]
+
+Subgroup: kidney_disease == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 245056
+  → AUC = 0.838
+  → Sensitivity (TPR) = 0.872
+  → Specificity (TNR) = 0.629
+  → Confusion Matrix:
+[[153845  90647]
+ [    72    492]]
+
+Subgroup: lung_disease == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 772186
+  → AUC = 0.859
+  → Sensitivity (TPR) = 0.851
+  → Specificity (TNR) = 0.715
+  → Confusion Matrix:
+[[551017 219725]
+ [   215   1229]]
+
+Subgroup: lung_disease == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 343944
+  → AUC = 0.849
+  → Sensitivity (TPR) = 0.861
+  → Specificity (TNR) = 0.664
+  → Confusion Matrix:
+[[227776 115398]
+ [   107    663]]
+
+Subgroup: heart_disease == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 726709
+  → AUC = 0.862
+  → Sensitivity (TPR) = 0.823
+  → Specificity (TNR) = 0.746
+  → Confusion Matrix:
+[[541217 184196]
+ [   230   1066]]
+
+Subgroup: heart_disease == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 389421
+  → AUC = 0.845
+  → Sensitivity (TPR) = 0.900
+  → Specificity (TNR) = 0.612
+  → Confusion Matrix:
+[[237576 150927]
+ [    92    826]]
+
+Subgroup: drug_abuse == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 1059766
+  → AUC = 0.857
+  → Sensitivity (TPR) = 0.857
+  → Specificity (TNR) = 0.696
+  → Confusion Matrix:
+[[735601 322030]
+ [   305   1830]]
+
+Subgroup: drug_abuse == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 56364
+  → AUC = 0.845
+  → Sensitivity (TPR) = 0.785
+  → Specificity (TNR) = 0.767
+  → Confusion Matrix:
+[[43192 13093]
+ [   17    62]]
+
+Subgroup: depression == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 942151
+  → AUC = 0.854
+  → Sensitivity (TPR) = 0.853
+  → Specificity (TNR) = 0.695
+  → Confusion Matrix:
+[[653035 287210]
+ [   281   1625]]
+
+Subgroup: depression == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 173979
+  → AUC = 0.868
+  → Sensitivity (TPR) = 0.867
+  → Specificity (TNR) = 0.724
+  → Confusion Matrix:
+[[125758  47913]
+ [    41    267]]
+
+Subgroup: sedatives_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 811889
+  → AUC = 0.865
+  → Sensitivity (TPR) = 0.785
+  → Specificity (TNR) = 0.792
+  → Confusion Matrix:
+[[642520 168370]
+ [   215    784]]
+
+Subgroup: sedatives_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 304241
+  → AUC = 0.791
+  → Sensitivity (TPR) = 0.912
+  → Specificity (TNR) = 0.450
+  → Confusion Matrix:
+[[136273 166753]
+ [   107   1108]]
+
+Subgroup: blood_products_transfusions_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 1047604
+  → AUC = 0.858
+  → Sensitivity (TPR) = 0.841
+  → Specificity (TNR) = 0.716
+  → Confusion Matrix:
+[[748325 297389]
+ [   301   1589]]
+
+Subgroup: blood_products_transfusions_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 68526
+  → AUC = 0.780
+  → Sensitivity (TPR) = 0.935
+  → Specificity (TNR) = 0.447
+  → Confusion Matrix:
+[[30468 37734]
+ [   21   303]]
+
+Subgroup: antibiotics_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 910263
+  → AUC = 0.866
+  → Sensitivity (TPR) = 0.859
+  → Specificity (TNR) = 0.717
+  → Confusion Matrix:
+[[651865 256709]
+ [   238   1451]]
+
+Subgroup: antibiotics_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 205867
+  → AUC = 0.815
+  → Sensitivity (TPR) = 0.840
+  → Specificity (TNR) = 0.618
+  → Confusion Matrix:
+[[126928  78414]
+ [    84    441]]
+
+Subgroup: anticoagulants_antiplatelets_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 905300
+  → AUC = 0.861
+  → Sensitivity (TPR) = 0.854
+  → Specificity (TNR) = 0.709
+  → Confusion Matrix:
+[[640979 262536]
+ [   261   1524]]
+
+Subgroup: anticoagulants_antiplatelets_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 210830
+  → AUC = 0.836
+  → Sensitivity (TPR) = 0.858
+  → Specificity (TNR) = 0.655
+  → Confusion Matrix:
+[[137814  72587]
+ [    61    368]]
+
+Subgroup: neuromuscular_blockers_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 1102011
+  → AUC = 0.855
+  → Sensitivity (TPR) = 0.846
+  → Specificity (TNR) = 0.706
+  → Confusion Matrix:
+[[777093 322835]
+ [   320   1763]]
+
+Subgroup: neuromuscular_blockers_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 14119
+  → AUC = 0.717
+  → Sensitivity (TPR) = 0.985
+  → Specificity (TNR) = 0.122
+  → Confusion Matrix:
+[[ 1700 12288]
+ [    2   129]]
+
+Subgroup: analgesics_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 821599
+  → AUC = 0.866
+  → Sensitivity (TPR) = 0.795
+  → Specificity (TNR) = 0.774
+  → Confusion Matrix:
+[[635200 185194]
+ [   247    958]]
+
+Subgroup: analgesics_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 294531
+  → AUC = 0.806
+  → Sensitivity (TPR) = 0.926
+  → Specificity (TNR) = 0.489
+  → Confusion Matrix:
+[[143593 149929]
+ [    75    934]]
+
+Subgroup: crystalloids_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 136986
+  → AUC = 0.908
+  → Sensitivity (TPR) = 0.644
+  → Specificity (TNR) = 0.937
+  → Confusion Matrix:
+[[128215   8670]
+ [    36     65]]
+
+Subgroup: crystalloids_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 979144
+  → AUC = 0.846
+  → Sensitivity (TPR) = 0.865
+  → Specificity (TNR) = 0.666
+  → Confusion Matrix:
+[[650578 326453]
+ [   286   1827]]
+
+Subgroup: electrolytes_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 866321
+  → AUC = 0.865
+  → Sensitivity (TPR) = 0.837
+  → Specificity (TNR) = 0.735
+  → Confusion Matrix:
+[[635343 229510]
+ [   240   1228]]
+
+Subgroup: electrolytes_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 249809
+  → AUC = 0.819
+  → Sensitivity (TPR) = 0.890
+  → Specificity (TNR) = 0.576
+  → Confusion Matrix:
+[[143450 105613]
+ [    82    664]]
+
+Subgroup: gi_protection_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 1036917
+  → AUC = 0.859
+  → Sensitivity (TPR) = 0.856
+  → Specificity (TNR) = 0.701
+  → Confusion Matrix:
+[[725242 309628]
+ [   295   1752]]
+
+Subgroup: gi_protection_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 79213
+  → AUC = 0.826
+  → Sensitivity (TPR) = 0.838
+  → Specificity (TNR) = 0.677
+  → Confusion Matrix:
+[[53551 25495]
+ [   27   140]]
+
+Subgroup: parenteral_nutrition_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 1038955
+  → AUC = 0.859
+  → Sensitivity (TPR) = 0.857
+  → Specificity (TNR) = 0.703
+  → Confusion Matrix:
+[[728467 308432]
+ [   294   1762]]
+
+Subgroup: parenteral_nutrition_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 77175
+  → AUC = 0.814
+  → Sensitivity (TPR) = 0.823
+  → Specificity (TNR) = 0.653
+  → Confusion Matrix:
+[[50326 26691]
+ [   28   130]]
+
+Subgroup: antiarrhythmics_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 1068746
+  → AUC = 0.858
+  → Sensitivity (TPR) = 0.846
+  → Specificity (TNR) = 0.712
+  → Confusion Matrix:
+[[759734 306998]
+ [   311   1703]]
+
+Subgroup: antiarrhythmics_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 47384
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.945
+  → Specificity (TNR) = 0.404
+  → Confusion Matrix:
+[[19059 28125]
+ [   11   189]]
+
+Subgroup: treatment_given == 0 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 913492
+  → AUC = 0.861
+  → Sensitivity (TPR) = 0.677
+  → Specificity (TNR) = 0.853
+  → Confusion Matrix:
+[[778793 133701]
+ [   322    676]]
+
+Subgroup: treatment_given == 1 | Model: Unnamed Model | Threshold: 0.001335
+  → N = 202638
+  → AUC = 0.679
+  → Sensitivity (TPR) = 1.000
+  → Specificity (TNR) = 0.000
+  → Confusion Matrix:
+[[     0 201422]
+ [     0   1216]]
+
+Subgroup: positive_sample == False | Model: Unnamed Model | Threshold: 0.001335
+  → N = 502790
+  → AUC = nan
+  → Sensitivity (TPR) = nan
+  → Specificity (TNR) = 0.887
+  → Confusion Matrix:
+[[445784  57006]
+ [     0      0]]
+
+Subgroup: positive_sample == True | Model: Unnamed Model | Threshold: 0.001335
+  → N = 613340
+  → AUC = 0.790
+  → Sensitivity (TPR) = 0.855
+  → Specificity (TNR) = 0.545
+  → Confusion Matrix:
+[[333009 278117]
+ [   322   1892]]
+
+Subgroup: ethnicity_bin == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 830833
+  → AUC = 0.829
+  → Sensitivity (TPR) = 0.822
+  → Specificity (TNR) = 0.673
+  → Confusion Matrix:
+[[558232 271020]
+ [   281   1300]]
+
+Subgroup: ethnicity_bin == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 94710
+  → AUC = 0.837
+  → Sensitivity (TPR) = 0.853
+  → Specificity (TNR) = 0.665
+  → Confusion Matrix:
+[[62855 31638]
+ [   32   185]]
+
+Subgroup: ethnicity_bin == 2 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 35484
+  → AUC = 0.794
+  → Sensitivity (TPR) = 0.706
+  → Specificity (TNR) = 0.742
+  → Confusion Matrix:
+[[26300  9150]
+ [   10    24]]
+
+Subgroup: ethnicity_bin == 3 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 25157
+  → AUC = 0.814
+  → Sensitivity (TPR) = 0.750
+  → Specificity (TNR) = 0.725
+  → Confusion Matrix:
+[[18198  6899]
+ [   15    45]]
+
+Subgroup: ethnicity_bin == 4 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 129946
+  → AUC = 0.807
+  → Sensitivity (TPR) = 0.804
+  → Specificity (TNR) = 0.640
+  → Confusion Matrix:
+[[82948 46676]
+ [   63   259]]
+
+Subgroup: age_bin == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 250047
+  → AUC = 0.832
+  → Sensitivity (TPR) = 0.774
+  → Specificity (TNR) = 0.755
+  → Confusion Matrix:
+[[188582  61160]
+ [    69    236]]
+
+Subgroup: age_bin == 2 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 285298
+  → AUC = 0.824
+  → Sensitivity (TPR) = 0.808
+  → Specificity (TNR) = 0.683
+  → Confusion Matrix:
+[[194562  90148]
+ [   113    475]]
+
+Subgroup: age_bin == 3 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 277618
+  → AUC = 0.816
+  → Sensitivity (TPR) = 0.831
+  → Specificity (TNR) = 0.627
+  → Confusion Matrix:
+[[173705 103234]
+ [   115    564]]
+
+Subgroup: age_bin == 4 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 303167
+  → AUC = 0.823
+  → Sensitivity (TPR) = 0.838
+  → Specificity (TNR) = 0.634
+  → Confusion Matrix:
+[[191684 110841]
+ [   104    538]]
+
+Subgroup: height_bin == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 184555
+  → AUC = 0.808
+  → Sensitivity (TPR) = 0.833
+  → Specificity (TNR) = 0.593
+  → Confusion Matrix:
+[[109184  74946]
+ [    71    354]]
+
+Subgroup: height_bin == 2 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 224324
+  → AUC = 0.814
+  → Sensitivity (TPR) = 0.814
+  → Specificity (TNR) = 0.630
+  → Confusion Matrix:
+[[140962  82888]
+ [    88    386]]
+
+Subgroup: height_bin == 3 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 126717
+  → AUC = 0.828
+  → Sensitivity (TPR) = 0.850
+  → Specificity (TNR) = 0.608
+  → Confusion Matrix:
+[[76814 49596]
+ [   46   261]]
+
+Subgroup: height_bin == 4 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 580534
+  → AUC = 0.836
+  → Sensitivity (TPR) = 0.806
+  → Specificity (TNR) = 0.727
+  → Confusion Matrix:
+[[421573 157953]
+ [   196    812]]
+
+Subgroup: weight_bin == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 276840
+  → AUC = 0.824
+  → Sensitivity (TPR) = 0.799
+  → Specificity (TNR) = 0.687
+  → Confusion Matrix:
+[[189917  86420]
+ [   101    402]]
+
+Subgroup: weight_bin == 2 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 284700
+  → AUC = 0.833
+  → Sensitivity (TPR) = 0.825
+  → Specificity (TNR) = 0.668
+  → Confusion Matrix:
+[[189949  94208]
+ [    95    448]]
+
+Subgroup: weight_bin == 3 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 238730
+  → AUC = 0.823
+  → Sensitivity (TPR) = 0.803
+  → Specificity (TNR) = 0.677
+  → Confusion Matrix:
+[[161250  76928]
+ [   109    443]]
+
+Subgroup: weight_bin == 4 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 315860
+  → AUC = 0.828
+  → Sensitivity (TPR) = 0.844
+  → Specificity (TNR) = 0.658
+  → Confusion Matrix:
+[[207417 107827]
+ [    96    520]]
+
+Subgroup: bmi_bin == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 172941
+  → AUC = 0.818
+  → Sensitivity (TPR) = 0.838
+  → Specificity (TNR) = 0.639
+  → Confusion Matrix:
+[[110266  62310]
+ [    59    306]]
+
+Subgroup: bmi_bin == 2 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 189460
+  → AUC = 0.814
+  → Sensitivity (TPR) = 0.844
+  → Specificity (TNR) = 0.620
+  → Confusion Matrix:
+[[117163  71823]
+ [    74    400]]
+
+Subgroup: bmi_bin == 3 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 187318
+  → AUC = 0.804
+  → Sensitivity (TPR) = 0.803
+  → Specificity (TNR) = 0.621
+  → Confusion Matrix:
+[[116109  70738]
+ [    93    378]]
+
+Subgroup: bmi_bin == 4 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 566411
+  → AUC = 0.838
+  → Sensitivity (TPR) = 0.806
+  → Specificity (TNR) = 0.716
+  → Confusion Matrix:
+[[404995 160512]
+ [   175    729]]
+
+Subgroup: obesity == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 1011191
+  → AUC = 0.829
+  → Sensitivity (TPR) = 0.820
+  → Specificity (TNR) = 0.677
+  → Confusion Matrix:
+[[682947 326218]
+ [   365   1661]]
+
+Subgroup: obesity == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 104939
+  → AUC = 0.808
+  → Sensitivity (TPR) = 0.809
+  → Specificity (TNR) = 0.626
+  → Confusion Matrix:
+[[65586 39165]
+ [   36   152]]
+
+Subgroup: hypertension == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 463624
+  → AUC = 0.825
+  → Sensitivity (TPR) = 0.803
+  → Specificity (TNR) = 0.678
+  → Confusion Matrix:
+[[313704 149097]
+ [   162    661]]
+
+Subgroup: hypertension == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 652506
+  → AUC = 0.827
+  → Sensitivity (TPR) = 0.828
+  → Specificity (TNR) = 0.668
+  → Confusion Matrix:
+[[434829 216286]
+ [   239   1152]]
+
+Subgroup: diabetes == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 775809
+  → AUC = 0.830
+  → Sensitivity (TPR) = 0.812
+  → Specificity (TNR) = 0.685
+  → Confusion Matrix:
+[[530776 243572]
+ [   274   1187]]
+
+Subgroup: diabetes == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 340321
+  → AUC = 0.818
+  → Sensitivity (TPR) = 0.831
+  → Specificity (TNR) = 0.641
+  → Confusion Matrix:
+[[217757 121811]
+ [   127    626]]
+
+Subgroup: kidney_disease == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 871074
+  → AUC = 0.829
+  → Sensitivity (TPR) = 0.808
+  → Specificity (TNR) = 0.688
+  → Confusion Matrix:
+[[598096 271328]
+ [   316   1334]]
+
+Subgroup: kidney_disease == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 245056
+  → AUC = 0.817
+  → Sensitivity (TPR) = 0.849
+  → Specificity (TNR) = 0.615
+  → Confusion Matrix:
+[[150437  94055]
+ [    85    479]]
+
+Subgroup: lung_disease == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 772186
+  → AUC = 0.827
+  → Sensitivity (TPR) = 0.816
+  → Specificity (TNR) = 0.687
+  → Confusion Matrix:
+[[529315 241427]
+ [   266   1178]]
+
+Subgroup: lung_disease == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 343944
+  → AUC = 0.825
+  → Sensitivity (TPR) = 0.825
+  → Specificity (TNR) = 0.639
+  → Confusion Matrix:
+[[219218 123956]
+ [   135    635]]
+
+Subgroup: heart_disease == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 726709
+  → AUC = 0.828
+  → Sensitivity (TPR) = 0.785
+  → Specificity (TNR) = 0.717
+  → Confusion Matrix:
+[[519962 205451]
+ [   278   1018]]
+
+Subgroup: heart_disease == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 389421
+  → AUC = 0.822
+  → Sensitivity (TPR) = 0.866
+  → Specificity (TNR) = 0.588
+  → Confusion Matrix:
+[[228571 159932]
+ [   123    795]]
+
+Subgroup: drug_abuse == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 1059766
+  → AUC = 0.827
+  → Sensitivity (TPR) = 0.822
+  → Specificity (TNR) = 0.669
+  → Confusion Matrix:
+[[707141 350490]
+ [   380   1755]]
+
+Subgroup: drug_abuse == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 56364
+  → AUC = 0.819
+  → Sensitivity (TPR) = 0.734
+  → Specificity (TNR) = 0.735
+  → Confusion Matrix:
+[[41392 14893]
+ [   21    58]]
+
+Subgroup: depression == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 942151
+  → AUC = 0.825
+  → Sensitivity (TPR) = 0.819
+  → Specificity (TNR) = 0.666
+  → Confusion Matrix:
+[[625992 314253]
+ [   345   1561]]
+
+Subgroup: depression == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 173979
+  → AUC = 0.838
+  → Sensitivity (TPR) = 0.818
+  → Specificity (TNR) = 0.706
+  → Confusion Matrix:
+[[122541  51130]
+ [    56    252]]
+
+Subgroup: sedatives_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 811889
+  → AUC = 0.819
+  → Sensitivity (TPR) = 0.692
+  → Specificity (TNR) = 0.793
+  → Confusion Matrix:
+[[643249 167641]
+ [   308    691]]
+
+Subgroup: sedatives_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 304241
+  → AUC = 0.769
+  → Sensitivity (TPR) = 0.923
+  → Specificity (TNR) = 0.347
+  → Confusion Matrix:
+[[105284 197742]
+ [    93   1122]]
+
+Subgroup: blood_products_transfusions_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 1047604
+  → AUC = 0.826
+  → Sensitivity (TPR) = 0.801
+  → Specificity (TNR) = 0.693
+  → Confusion Matrix:
+[[724748 320966]
+ [   377   1513]]
+
+Subgroup: blood_products_transfusions_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 68526
+  → AUC = 0.764
+  → Sensitivity (TPR) = 0.926
+  → Specificity (TNR) = 0.349
+  → Confusion Matrix:
+[[23785 44417]
+ [   24   300]]
+
+Subgroup: antibiotics_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 910263
+  → AUC = 0.835
+  → Sensitivity (TPR) = 0.816
+  → Specificity (TNR) = 0.693
+  → Confusion Matrix:
+[[629215 279359]
+ [   310   1379]]
+
+Subgroup: antibiotics_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 205867
+  → AUC = 0.788
+  → Sensitivity (TPR) = 0.827
+  → Specificity (TNR) = 0.581
+  → Confusion Matrix:
+[[119318  86024]
+ [    91    434]]
+
+Subgroup: anticoagulants_antiplatelets_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 905300
+  → AUC = 0.829
+  → Sensitivity (TPR) = 0.820
+  → Specificity (TNR) = 0.681
+  → Confusion Matrix:
+[[614943 288572]
+ [   321   1464]]
+
+Subgroup: anticoagulants_antiplatelets_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 210830
+  → AUC = 0.815
+  → Sensitivity (TPR) = 0.814
+  → Specificity (TNR) = 0.635
+  → Confusion Matrix:
+[[133590  76811]
+ [    80    349]]
+
+Subgroup: neuromuscular_blockers_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 1102011
+  → AUC = 0.824
+  → Sensitivity (TPR) = 0.808
+  → Specificity (TNR) = 0.680
+  → Confusion Matrix:
+[[747890 352038]
+ [   400   1683]]
+
+Subgroup: neuromuscular_blockers_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 14119
+  → AUC = 0.702
+  → Sensitivity (TPR) = 0.992
+  → Specificity (TNR) = 0.046
+  → Confusion Matrix:
+[[  643 13345]
+ [    1   130]]
+
+Subgroup: analgesics_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 821599
+  → AUC = 0.828
+  → Sensitivity (TPR) = 0.736
+  → Specificity (TNR) = 0.766
+  → Confusion Matrix:
+[[628129 192265]
+ [   318    887]]
+
+Subgroup: analgesics_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 294531
+  → AUC = 0.783
+  → Sensitivity (TPR) = 0.918
+  → Specificity (TNR) = 0.410
+  → Confusion Matrix:
+[[120404 173118]
+ [    83    926]]
+
+Subgroup: crystalloids_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 136986
+  → AUC = 0.898
+  → Sensitivity (TPR) = 0.683
+  → Specificity (TNR) = 0.926
+  → Confusion Matrix:
+[[126747  10138]
+ [    32     69]]
+
+Subgroup: crystalloids_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 979144
+  → AUC = 0.814
+  → Sensitivity (TPR) = 0.825
+  → Specificity (TNR) = 0.636
+  → Confusion Matrix:
+[[621786 355245]
+ [   369   1744]]
+
+Subgroup: electrolytes_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 866321
+  → AUC = 0.833
+  → Sensitivity (TPR) = 0.790
+  → Specificity (TNR) = 0.716
+  → Confusion Matrix:
+[[619633 245220]
+ [   309   1159]]
+
+Subgroup: electrolytes_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 249809
+  → AUC = 0.793
+  → Sensitivity (TPR) = 0.877
+  → Specificity (TNR) = 0.518
+  → Confusion Matrix:
+[[128900 120163]
+ [    92    654]]
+
+Subgroup: gi_protection_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 1036917
+  → AUC = 0.830
+  → Sensitivity (TPR) = 0.819
+  → Specificity (TNR) = 0.675
+  → Confusion Matrix:
+[[698804 336066]
+ [   370   1677]]
+
+Subgroup: gi_protection_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 79213
+  → AUC = 0.788
+  → Sensitivity (TPR) = 0.814
+  → Specificity (TNR) = 0.629
+  → Confusion Matrix:
+[[49729 29317]
+ [   31   136]]
+
+Subgroup: parenteral_nutrition_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 1038955
+  → AUC = 0.827
+  → Sensitivity (TPR) = 0.817
+  → Specificity (TNR) = 0.675
+  → Confusion Matrix:
+[[699813 337086]
+ [   377   1679]]
+
+Subgroup: parenteral_nutrition_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 77175
+  → AUC = 0.818
+  → Sensitivity (TPR) = 0.848
+  → Specificity (TNR) = 0.633
+  → Confusion Matrix:
+[[48720 28297]
+ [   24   134]]
+
+Subgroup: antiarrhythmics_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 1068746
+  → AUC = 0.827
+  → Sensitivity (TPR) = 0.806
+  → Specificity (TNR) = 0.687
+  → Confusion Matrix:
+[[733162 333570]
+ [   391   1623]]
+
+Subgroup: antiarrhythmics_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 47384
+  → AUC = 0.763
+  → Sensitivity (TPR) = 0.950
+  → Specificity (TNR) = 0.326
+  → Confusion Matrix:
+[[15371 31813]
+ [   10   190]]
+
+Subgroup: treatment_given == 0 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 913492
+  → AUC = 0.858
+  → Sensitivity (TPR) = 0.811
+  → Specificity (TNR) = 0.748
+  → Confusion Matrix:
+[[682745 229749]
+ [   189    809]]
+
+Subgroup: treatment_given == 1 | Model: Unnamed Model | Threshold: 0.001327
+  → N = 202638
+  → AUC = 0.665
+  → Sensitivity (TPR) = 0.826
+  → Specificity (TNR) = 0.327
+  → Confusion Matrix:
+[[ 65788 135634]
+ [   212   1004]]
+
+Subgroup: positive_sample == False | Model: Unnamed Model | Threshold: 0.001327
+  → N = 502790
+  → AUC = nan
+  → Sensitivity (TPR) = nan
+  → Specificity (TNR) = 0.801
+  → Confusion Matrix:
+[[402745 100045]
+ [     0      0]]
+
+Subgroup: positive_sample == True | Model: Unnamed Model | Threshold: 0.001327
+  → N = 613340
+  → AUC = 0.777
+  → Sensitivity (TPR) = 0.819
+  → Specificity (TNR) = 0.566
+  → Confusion Matrix:
+[[345788 265338]
+ [   401   1813]]
+
+Subgroup: ethnicity_bin == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 378542
+  → AUC = 0.810
+  → Sensitivity (TPR) = 0.771
+  → Specificity (TNR) = 0.695
+  → Confusion Matrix:
+[[262424 114924]
+ [   274    920]]
+
+Subgroup: ethnicity_bin == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 40269
+  → AUC = 0.787
+  → Sensitivity (TPR) = 0.824
+  → Specificity (TNR) = 0.595
+  → Confusion Matrix:
+[[23869 16235]
+ [   29   136]]
+
+Subgroup: ethnicity_bin == 2 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 13014
+  → AUC = 0.803
+  → Sensitivity (TPR) = 0.615
+  → Specificity (TNR) = 0.786
+  → Confusion Matrix:
+[[10204  2784]
+ [   10    16]]
+
+Subgroup: ethnicity_bin == 3 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 10216
+  → AUC = 0.811
+  → Sensitivity (TPR) = 0.628
+  → Specificity (TNR) = 0.761
+  → Confusion Matrix:
+[[7745 2428]
+ [  16   27]]
+
+Subgroup: ethnicity_bin == 4 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 66452
+  → AUC = 0.788
+  → Sensitivity (TPR) = 0.733
+  → Specificity (TNR) = 0.662
+  → Confusion Matrix:
+[[43860 22345]
+ [   66   181]]
+
+Subgroup: age_bin == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 103687
+  → AUC = 0.843
+  → Sensitivity (TPR) = 0.702
+  → Specificity (TNR) = 0.785
+  → Confusion Matrix:
+[[81156 22286]
+ [   73   172]]
+
+Subgroup: age_bin == 2 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 137693
+  → AUC = 0.802
+  → Sensitivity (TPR) = 0.747
+  → Specificity (TNR) = 0.700
+  → Confusion Matrix:
+[[96102 41140]
+ [  114   337]]
+
+Subgroup: age_bin == 3 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 133398
+  → AUC = 0.793
+  → Sensitivity (TPR) = 0.770
+  → Specificity (TNR) = 0.665
+  → Confusion Matrix:
+[[88383 44523]
+ [  113   379]]
+
+Subgroup: age_bin == 4 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 133715
+  → AUC = 0.795
+  → Sensitivity (TPR) = 0.805
+  → Specificity (TNR) = 0.619
+  → Confusion Matrix:
+[[82461 50767]
+ [   95   392]]
+
+Subgroup: height_bin == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 85974
+  → AUC = 0.790
+  → Sensitivity (TPR) = 0.788
+  → Specificity (TNR) = 0.634
+  → Confusion Matrix:
+[[54263 31385]
+ [   69   257]]
+
+Subgroup: height_bin == 2 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 114430
+  → AUC = 0.813
+  → Sensitivity (TPR) = 0.780
+  → Specificity (TNR) = 0.680
+  → Confusion Matrix:
+[[77517 36540]
+ [   82   291]]
+
+Subgroup: height_bin == 3 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 64727
+  → AUC = 0.800
+  → Sensitivity (TPR) = 0.765
+  → Specificity (TNR) = 0.679
+  → Confusion Matrix:
+[[43764 20712]
+ [   59   192]]
+
+Subgroup: height_bin == 4 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 243362
+  → AUC = 0.809
+  → Sensitivity (TPR) = 0.745
+  → Specificity (TNR) = 0.711
+  → Confusion Matrix:
+[[172558  70079]
+ [   185    540]]
+
+Subgroup: weight_bin == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 111229
+  → AUC = 0.798
+  → Sensitivity (TPR) = 0.759
+  → Specificity (TNR) = 0.672
+  → Confusion Matrix:
+[[74535 36345]
+ [   84   265]]
+
+Subgroup: weight_bin == 2 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 125013
+  → AUC = 0.812
+  → Sensitivity (TPR) = 0.791
+  → Specificity (TNR) = 0.690
+  → Confusion Matrix:
+[[86037 38570]
+ [   85   321]]
+
+Subgroup: weight_bin == 3 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 118659
+  → AUC = 0.799
+  → Sensitivity (TPR) = 0.738
+  → Specificity (TNR) = 0.682
+  → Confusion Matrix:
+[[80565 37643]
+ [  118   333]]
+
+Subgroup: weight_bin == 4 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 153592
+  → AUC = 0.814
+  → Sensitivity (TPR) = 0.770
+  → Specificity (TNR) = 0.699
+  → Confusion Matrix:
+[[106965  46158]
+ [   108    361]]
+
+Subgroup: bmi_bin == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 80491
+  → AUC = 0.798
+  → Sensitivity (TPR) = 0.812
+  → Specificity (TNR) = 0.641
+  → Confusion Matrix:
+[[51444 28776]
+ [   51   220]]
+
+Subgroup: bmi_bin == 2 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 102622
+  → AUC = 0.793
+  → Sensitivity (TPR) = 0.758
+  → Specificity (TNR) = 0.664
+  → Confusion Matrix:
+[[67874 34380]
+ [   89   279]]
+
+Subgroup: bmi_bin == 3 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 94506
+  → AUC = 0.783
+  → Sensitivity (TPR) = 0.753
+  → Specificity (TNR) = 0.666
+  → Confusion Matrix:
+[[62648 31481]
+ [   93   284]]
+
+Subgroup: bmi_bin == 4 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 230874
+  → AUC = 0.825
+  → Sensitivity (TPR) = 0.754
+  → Specificity (TNR) = 0.722
+  → Confusion Matrix:
+[[166136  64079]
+ [   162    497]]
+
+Subgroup: obesity == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 454219
+  → AUC = 0.806
+  → Sensitivity (TPR) = 0.764
+  → Specificity (TNR) = 0.686
+  → Confusion Matrix:
+[[310397 142306]
+ [   358   1158]]
+
+Subgroup: obesity == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 54274
+  → AUC = 0.809
+  → Sensitivity (TPR) = 0.767
+  → Specificity (TNR) = 0.697
+  → Confusion Matrix:
+[[37705 16410]
+ [   37   122]]
+
+Subgroup: hypertension == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 213298
+  → AUC = 0.809
+  → Sensitivity (TPR) = 0.748
+  → Specificity (TNR) = 0.709
+  → Confusion Matrix:
+[[150761  61922]
+ [   155    460]]
+
+Subgroup: hypertension == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 295195
+  → AUC = 0.803
+  → Sensitivity (TPR) = 0.774
+  → Specificity (TNR) = 0.671
+  → Confusion Matrix:
+[[197341  96794]
+ [   240    820]]
+
+Subgroup: diabetes == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 345078
+  → AUC = 0.809
+  → Sensitivity (TPR) = 0.751
+  → Specificity (TNR) = 0.705
+  → Confusion Matrix:
+[[242372 101614]
+ [   272    820]]
+
+Subgroup: diabetes == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 163415
+  → AUC = 0.800
+  → Sensitivity (TPR) = 0.789
+  → Specificity (TNR) = 0.649
+  → Confusion Matrix:
+[[105730  57102]
+ [   123    460]]
+
+Subgroup: kidney_disease == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 401231
+  → AUC = 0.818
+  → Sensitivity (TPR) = 0.765
+  → Specificity (TNR) = 0.711
+  → Confusion Matrix:
+[[284381 115578]
+ [   299    973]]
+
+Subgroup: kidney_disease == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 107262
+  → AUC = 0.758
+  → Sensitivity (TPR) = 0.762
+  → Specificity (TNR) = 0.596
+  → Confusion Matrix:
+[[63721 43138]
+ [   96   307]]
+
+Subgroup: lung_disease == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 346064
+  → AUC = 0.810
+  → Sensitivity (TPR) = 0.756
+  → Specificity (TNR) = 0.699
+  → Confusion Matrix:
+[[241095 103886]
+ [   264    819]]
+
+Subgroup: lung_disease == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 162429
+  → AUC = 0.797
+  → Sensitivity (TPR) = 0.779
+  → Specificity (TNR) = 0.661
+  → Confusion Matrix:
+[[107007  54830]
+ [   131    461]]
+
+Subgroup: heart_disease == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 324947
+  → AUC = 0.815
+  → Sensitivity (TPR) = 0.713
+  → Specificity (TNR) = 0.745
+  → Confusion Matrix:
+[[241335  82634]
+ [   281    697]]
+
+Subgroup: heart_disease == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 183546
+  → AUC = 0.792
+  → Sensitivity (TPR) = 0.836
+  → Specificity (TNR) = 0.584
+  → Confusion Matrix:
+[[106767  76082]
+ [   114    583]]
+
+Subgroup: drug_abuse == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 484056
+  → AUC = 0.806
+  → Sensitivity (TPR) = 0.768
+  → Specificity (TNR) = 0.684
+  → Confusion Matrix:
+[[329861 152589]
+ [   372   1234]]
+
+Subgroup: drug_abuse == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 24437
+  → AUC = 0.798
+  → Sensitivity (TPR) = 0.667
+  → Specificity (TNR) = 0.749
+  → Confusion Matrix:
+[[18241  6127]
+ [   23    46]]
+
+Subgroup: depression == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 438760
+  → AUC = 0.806
+  → Sensitivity (TPR) = 0.769
+  → Specificity (TNR) = 0.682
+  → Confusion Matrix:
+[[298095 139212]
+ [   335   1118]]
+
+Subgroup: depression == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 69733
+  → AUC = 0.808
+  → Sensitivity (TPR) = 0.730
+  → Specificity (TNR) = 0.719
+  → Confusion Matrix:
+[[50007 19504]
+ [   60   162]]
+
+Subgroup: sedatives_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 284419
+  → AUC = 0.820
+  → Sensitivity (TPR) = 0.687
+  → Specificity (TNR) = 0.776
+  → Confusion Matrix:
+[[220191  63580]
+ [   203    445]]
+
+Subgroup: sedatives_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 224074
+  → AUC = 0.775
+  → Sensitivity (TPR) = 0.813
+  → Specificity (TNR) = 0.573
+  → Confusion Matrix:
+[[127911  95136]
+ [   192    835]]
+
+Subgroup: blood_products_transfusions_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 466931
+  → AUC = 0.808
+  → Sensitivity (TPR) = 0.739
+  → Specificity (TNR) = 0.713
+  → Confusion Matrix:
+[[331743 133773]
+ [   369   1046]]
+
+Subgroup: blood_products_transfusions_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 41562
+  → AUC = 0.738
+  → Sensitivity (TPR) = 0.900
+  → Specificity (TNR) = 0.396
+  → Confusion Matrix:
+[[16359 24943]
+ [   26   234]]
+
+Subgroup: antibiotics_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 396882
+  → AUC = 0.821
+  → Sensitivity (TPR) = 0.774
+  → Specificity (TNR) = 0.700
+  → Confusion Matrix:
+[[277105 118518]
+ [   284    975]]
+
+Subgroup: antibiotics_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 111611
+  → AUC = 0.757
+  → Sensitivity (TPR) = 0.733
+  → Specificity (TNR) = 0.638
+  → Confusion Matrix:
+[[70997 40198]
+ [  111   305]]
+
+Subgroup: anticoagulants_antiplatelets_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 394797
+  → AUC = 0.812
+  → Sensitivity (TPR) = 0.782
+  → Specificity (TNR) = 0.686
+  → Confusion Matrix:
+[[269953 123514]
+ [   290   1040]]
+
+Subgroup: anticoagulants_antiplatelets_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 113696
+  → AUC = 0.780
+  → Sensitivity (TPR) = 0.696
+  → Specificity (TNR) = 0.689
+  → Confusion Matrix:
+[[78149 35202]
+ [  105   240]]
+
+Subgroup: neuromuscular_blockers_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 494971
+  → AUC = 0.805
+  → Sensitivity (TPR) = 0.748
+  → Specificity (TNR) = 0.698
+  → Confusion Matrix:
+[[344639 148784]
+ [   390   1158]]
+
+Subgroup: neuromuscular_blockers_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 13522
+  → AUC = 0.726
+  → Sensitivity (TPR) = 0.961
+  → Specificity (TNR) = 0.259
+  → Confusion Matrix:
+[[3463 9932]
+ [   5  122]]
+
+Subgroup: analgesics_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 296602
+  → AUC = 0.816
+  → Sensitivity (TPR) = 0.714
+  → Specificity (TNR) = 0.748
+  → Confusion Matrix:
+[[221131  74627]
+ [   241    603]]
+
+Subgroup: analgesics_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 211891
+  → AUC = 0.787
+  → Sensitivity (TPR) = 0.815
+  → Specificity (TNR) = 0.602
+  → Confusion Matrix:
+[[126971  84089]
+ [   154    677]]
+
+Subgroup: crystalloids_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 18585
+  → AUC = 0.905
+  → Sensitivity (TPR) = 0.746
+  → Specificity (TNR) = 0.886
+  → Confusion Matrix:
+[[16418  2108]
+ [   15    44]]
+
+Subgroup: crystalloids_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 489908
+  → AUC = 0.802
+  → Sensitivity (TPR) = 0.765
+  → Specificity (TNR) = 0.679
+  → Confusion Matrix:
+[[331684 156608]
+ [   380   1236]]
+
+Subgroup: electrolytes_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 353550
+  → AUC = 0.814
+  → Sensitivity (TPR) = 0.735
+  → Specificity (TNR) = 0.726
+  → Confusion Matrix:
+[[255786  96721]
+ [   276    767]]
+
+Subgroup: electrolytes_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 154943
+  → AUC = 0.785
+  → Sensitivity (TPR) = 0.812
+  → Specificity (TNR) = 0.598
+  → Confusion Matrix:
+[[92316 61995]
+ [  119   513]]
+
+Subgroup: gi_protection_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 470378
+  → AUC = 0.809
+  → Sensitivity (TPR) = 0.768
+  → Specificity (TNR) = 0.687
+  → Confusion Matrix:
+[[322053 146788]
+ [   356   1181]]
+
+Subgroup: gi_protection_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 38115
+  → AUC = 0.773
+  → Sensitivity (TPR) = 0.717
+  → Specificity (TNR) = 0.686
+  → Confusion Matrix:
+[[26049 11928]
+ [   39    99]]
+
+Subgroup: parenteral_nutrition_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 458602
+  → AUC = 0.808
+  → Sensitivity (TPR) = 0.770
+  → Specificity (TNR) = 0.683
+  → Confusion Matrix:
+[[312319 144742]
+ [   354   1187]]
+
+Subgroup: parenteral_nutrition_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 49891
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.694
+  → Specificity (TNR) = 0.719
+  → Confusion Matrix:
+[[35783 13974]
+ [   41    93]]
+
+Subgroup: antiarrhythmics_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 476397
+  → AUC = 0.810
+  → Sensitivity (TPR) = 0.751
+  → Specificity (TNR) = 0.706
+  → Confusion Matrix:
+[[335167 139720]
+ [   376   1134]]
+
+Subgroup: antiarrhythmics_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 32096
+  → AUC = 0.730
+  → Sensitivity (TPR) = 0.885
+  → Specificity (TNR) = 0.405
+  → Confusion Matrix:
+[[12935 18996]
+ [   19   146]]
+
+Subgroup: treatment_given == 0 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 355826
+  → AUC = 0.832
+  → Sensitivity (TPR) = 0.559
+  → Specificity (TNR) = 0.887
+  → Confusion Matrix:
+[[315007  40143]
+ [   298    378]]
+
+Subgroup: treatment_given == 1 | Model: Unnamed Model | Threshold: 0.003327
+  → N = 152667
+  → AUC = 0.669
+  → Sensitivity (TPR) = 0.903
+  → Specificity (TNR) = 0.218
+  → Confusion Matrix:
+[[ 33095 118573]
+ [    97    902]]
+
+Subgroup: positive_sample == False | Model: Unnamed Model | Threshold: 0.003327
+  → N = 129828
+  → AUC = nan
+  → Sensitivity (TPR) = nan
+  → Specificity (TNR) = 0.920
+  → Confusion Matrix:
+[[119416  10412]
+ [     0      0]]
+
+Subgroup: positive_sample == True | Model: Unnamed Model | Threshold: 0.003327
+  → N = 378665
+  → AUC = 0.765
+  → Sensitivity (TPR) = 0.764
+  → Specificity (TNR) = 0.607
+  → Confusion Matrix:
+[[228686 148304]
+ [   395   1280]]
+
+Subgroup: ethnicity_bin == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 378542
+  → AUC = 0.779
+  → Sensitivity (TPR) = 0.761
+  → Specificity (TNR) = 0.658
+  → Confusion Matrix:
+[[248144 129204]
+ [   285    909]]
+
+Subgroup: ethnicity_bin == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 40269
+  → AUC = 0.761
+  → Sensitivity (TPR) = 0.806
+  → Specificity (TNR) = 0.561
+  → Confusion Matrix:
+[[22496 17608]
+ [   32   133]]
+
+Subgroup: ethnicity_bin == 2 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 13014
+  → AUC = 0.784
+  → Sensitivity (TPR) = 0.769
+  → Specificity (TNR) = 0.739
+  → Confusion Matrix:
+[[9592 3396]
+ [   6   20]]
+
+Subgroup: ethnicity_bin == 3 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 10216
+  → AUC = 0.790
+  → Sensitivity (TPR) = 0.721
+  → Specificity (TNR) = 0.691
+  → Confusion Matrix:
+[[7032 3141]
+ [  12   31]]
+
+Subgroup: ethnicity_bin == 4 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 66452
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.757
+  → Specificity (TNR) = 0.643
+  → Confusion Matrix:
+[[42560 23645]
+ [   60   187]]
+
+Subgroup: age_bin == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 103687
+  → AUC = 0.799
+  → Sensitivity (TPR) = 0.698
+  → Specificity (TNR) = 0.755
+  → Confusion Matrix:
+[[78071 25371]
+ [   74   171]]
+
+Subgroup: age_bin == 2 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 137693
+  → AUC = 0.775
+  → Sensitivity (TPR) = 0.736
+  → Specificity (TNR) = 0.684
+  → Confusion Matrix:
+[[93808 43434]
+ [  119   332]]
+
+Subgroup: age_bin == 3 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 133398
+  → AUC = 0.763
+  → Sensitivity (TPR) = 0.772
+  → Specificity (TNR) = 0.616
+  → Confusion Matrix:
+[[81826 51080]
+ [  112   380]]
+
+Subgroup: age_bin == 4 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 133715
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.815
+  → Specificity (TNR) = 0.571
+  → Confusion Matrix:
+[[76119 57109]
+ [   90   397]]
+
+Subgroup: height_bin == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 85974
+  → AUC = 0.759
+  → Sensitivity (TPR) = 0.776
+  → Specificity (TNR) = 0.572
+  → Confusion Matrix:
+[[48984 36664]
+ [   73   253]]
+
+Subgroup: height_bin == 2 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 114430
+  → AUC = 0.792
+  → Sensitivity (TPR) = 0.777
+  → Specificity (TNR) = 0.646
+  → Confusion Matrix:
+[[73690 40367]
+ [   83   290]]
+
+Subgroup: height_bin == 3 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 64727
+  → AUC = 0.775
+  → Sensitivity (TPR) = 0.789
+  → Specificity (TNR) = 0.622
+  → Confusion Matrix:
+[[40114 24362]
+ [   53   198]]
+
+Subgroup: height_bin == 4 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 243362
+  → AUC = 0.781
+  → Sensitivity (TPR) = 0.743
+  → Specificity (TNR) = 0.688
+  → Confusion Matrix:
+[[167036  75601]
+ [   186    539]]
+
+Subgroup: weight_bin == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 111229
+  → AUC = 0.774
+  → Sensitivity (TPR) = 0.762
+  → Specificity (TNR) = 0.633
+  → Confusion Matrix:
+[[70189 40691]
+ [   83   266]]
+
+Subgroup: weight_bin == 2 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 125013
+  → AUC = 0.785
+  → Sensitivity (TPR) = 0.771
+  → Specificity (TNR) = 0.658
+  → Confusion Matrix:
+[[82024 42583]
+ [   93   313]]
+
+Subgroup: weight_bin == 3 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 118659
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.752
+  → Specificity (TNR) = 0.665
+  → Confusion Matrix:
+[[78557 39651]
+ [  112   339]]
+
+Subgroup: weight_bin == 4 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 153592
+  → AUC = 0.779
+  → Sensitivity (TPR) = 0.772
+  → Specificity (TNR) = 0.647
+  → Confusion Matrix:
+[[99054 54069]
+ [  107   362]]
+
+Subgroup: bmi_bin == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 80491
+  → AUC = 0.771
+  → Sensitivity (TPR) = 0.808
+  → Specificity (TNR) = 0.599
+  → Confusion Matrix:
+[[48028 32192]
+ [   52   219]]
+
+Subgroup: bmi_bin == 2 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 102622
+  → AUC = 0.781
+  → Sensitivity (TPR) = 0.788
+  → Specificity (TNR) = 0.622
+  → Confusion Matrix:
+[[63623 38631]
+ [   78   290]]
+
+Subgroup: bmi_bin == 3 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 94506
+  → AUC = 0.762
+  → Sensitivity (TPR) = 0.729
+  → Specificity (TNR) = 0.636
+  → Confusion Matrix:
+[[59900 34229]
+ [  102   275]]
+
+Subgroup: bmi_bin == 4 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 230874
+  → AUC = 0.788
+  → Sensitivity (TPR) = 0.753
+  → Specificity (TNR) = 0.688
+  → Confusion Matrix:
+[[158273  71942]
+ [   163    496]]
+
+Subgroup: obesity == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 454219
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.766
+  → Specificity (TNR) = 0.654
+  → Confusion Matrix:
+[[295857 156846]
+ [   354   1162]]
+
+Subgroup: obesity == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 54274
+  → AUC = 0.761
+  → Sensitivity (TPR) = 0.742
+  → Specificity (TNR) = 0.628
+  → Confusion Matrix:
+[[33967 20148]
+ [   41   118]]
+
+Subgroup: hypertension == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 213298
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.748
+  → Specificity (TNR) = 0.670
+  → Confusion Matrix:
+[[142427  70256]
+ [   155    460]]
+
+Subgroup: hypertension == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 295195
+  → AUC = 0.777
+  → Sensitivity (TPR) = 0.774
+  → Specificity (TNR) = 0.637
+  → Confusion Matrix:
+[[187397 106738]
+ [   240    820]]
+
+Subgroup: diabetes == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 345078
+  → AUC = 0.781
+  → Sensitivity (TPR) = 0.751
+  → Specificity (TNR) = 0.669
+  → Confusion Matrix:
+[[229962 114024]
+ [   272    820]]
+
+Subgroup: diabetes == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 163415
+  → AUC = 0.776
+  → Sensitivity (TPR) = 0.789
+  → Specificity (TNR) = 0.613
+  → Confusion Matrix:
+[[99862 62970]
+ [  123   460]]
+
+Subgroup: kidney_disease == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 401231
+  → AUC = 0.788
+  → Sensitivity (TPR) = 0.760
+  → Specificity (TNR) = 0.674
+  → Confusion Matrix:
+[[269423 130536]
+ [   305    967]]
+
+Subgroup: kidney_disease == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 107262
+  → AUC = 0.745
+  → Sensitivity (TPR) = 0.777
+  → Specificity (TNR) = 0.565
+  → Confusion Matrix:
+[[60401 46458]
+ [   90   313]]
+
+Subgroup: lung_disease == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 346064
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.756
+  → Specificity (TNR) = 0.663
+  → Confusion Matrix:
+[[228722 116259]
+ [   264    819]]
+
+Subgroup: lung_disease == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 162429
+  → AUC = 0.773
+  → Sensitivity (TPR) = 0.779
+  → Specificity (TNR) = 0.625
+  → Confusion Matrix:
+[[101102  60735]
+ [   131    461]]
+
+Subgroup: heart_disease == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 324947
+  → AUC = 0.783
+  → Sensitivity (TPR) = 0.711
+  → Specificity (TNR) = 0.714
+  → Confusion Matrix:
+[[231380  92589]
+ [   283    695]]
+
+Subgroup: heart_disease == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 183546
+  → AUC = 0.773
+  → Sensitivity (TPR) = 0.839
+  → Specificity (TNR) = 0.538
+  → Confusion Matrix:
+[[98444 84405]
+ [  112   585]]
+
+Subgroup: drug_abuse == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 484056
+  → AUC = 0.780
+  → Sensitivity (TPR) = 0.769
+  → Specificity (TNR) = 0.647
+  → Confusion Matrix:
+[[312241 170209]
+ [   371   1235]]
+
+Subgroup: drug_abuse == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 24437
+  → AUC = 0.777
+  → Sensitivity (TPR) = 0.652
+  → Specificity (TNR) = 0.722
+  → Confusion Matrix:
+[[17583  6785]
+ [   24    45]]
+
+Subgroup: depression == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 438760
+  → AUC = 0.779
+  → Sensitivity (TPR) = 0.767
+  → Specificity (TNR) = 0.645
+  → Confusion Matrix:
+[[281862 155445]
+ [   338   1115]]
+
+Subgroup: depression == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 69733
+  → AUC = 0.784
+  → Sensitivity (TPR) = 0.743
+  → Specificity (TNR) = 0.690
+  → Confusion Matrix:
+[[47962 21549]
+ [   57   165]]
+
+Subgroup: sedatives_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 284419
+  → AUC = 0.783
+  → Sensitivity (TPR) = 0.676
+  → Specificity (TNR) = 0.758
+  → Confusion Matrix:
+[[215167  68604]
+ [   210    438]]
+
+Subgroup: sedatives_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 224074
+  → AUC = 0.751
+  → Sensitivity (TPR) = 0.820
+  → Specificity (TNR) = 0.514
+  → Confusion Matrix:
+[[114657 108390]
+ [   185    842]]
+
+Subgroup: blood_products_transfusions_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 466931
+  → AUC = 0.779
+  → Sensitivity (TPR) = 0.737
+  → Specificity (TNR) = 0.679
+  → Confusion Matrix:
+[[315990 149526]
+ [   372   1043]]
+
+Subgroup: blood_products_transfusions_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 41562
+  → AUC = 0.728
+  → Sensitivity (TPR) = 0.912
+  → Specificity (TNR) = 0.335
+  → Confusion Matrix:
+[[13834 27468]
+ [   23   237]]
+
+Subgroup: antibiotics_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 396882
+  → AUC = 0.794
+  → Sensitivity (TPR) = 0.776
+  → Specificity (TNR) = 0.661
+  → Confusion Matrix:
+[[261567 134056]
+ [   282    977]]
+
+Subgroup: antibiotics_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 111611
+  → AUC = 0.733
+  → Sensitivity (TPR) = 0.728
+  → Specificity (TNR) = 0.614
+  → Confusion Matrix:
+[[68257 42938]
+ [  113   303]]
+
+Subgroup: anticoagulants_antiplatelets_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 394797
+  → AUC = 0.785
+  → Sensitivity (TPR) = 0.774
+  → Specificity (TNR) = 0.654
+  → Confusion Matrix:
+[[257218 136249]
+ [   301   1029]]
+
+Subgroup: anticoagulants_antiplatelets_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 113696
+  → AUC = 0.760
+  → Sensitivity (TPR) = 0.728
+  → Specificity (TNR) = 0.641
+  → Confusion Matrix:
+[[72606 40745]
+ [   94   251]]
+
+Subgroup: neuromuscular_blockers_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 494971
+  → AUC = 0.777
+  → Sensitivity (TPR) = 0.750
+  → Specificity (TNR) = 0.663
+  → Confusion Matrix:
+[[327336 166087]
+ [   387   1161]]
+
+Subgroup: neuromuscular_blockers_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 13522
+  → AUC = 0.706
+  → Sensitivity (TPR) = 0.937
+  → Specificity (TNR) = 0.186
+  → Confusion Matrix:
+[[ 2488 10907]
+ [    8   119]]
+
+Subgroup: analgesics_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 296602
+  → AUC = 0.790
+  → Sensitivity (TPR) = 0.720
+  → Specificity (TNR) = 0.716
+  → Confusion Matrix:
+[[211805  83953]
+ [   236    608]]
+
+Subgroup: analgesics_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 211891
+  → AUC = 0.759
+  → Sensitivity (TPR) = 0.809
+  → Specificity (TNR) = 0.559
+  → Confusion Matrix:
+[[118019  93041]
+ [   159    672]]
+
+Subgroup: crystalloids_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 18585
+  → AUC = 0.883
+  → Sensitivity (TPR) = 0.797
+  → Specificity (TNR) = 0.799
+  → Confusion Matrix:
+[[14794  3732]
+ [   12    47]]
+
+Subgroup: crystalloids_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 489908
+  → AUC = 0.775
+  → Sensitivity (TPR) = 0.763
+  → Specificity (TNR) = 0.645
+  → Confusion Matrix:
+[[315030 173262]
+ [   383   1233]]
+
+Subgroup: electrolytes_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 353550
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.726
+  → Specificity (TNR) = 0.690
+  → Confusion Matrix:
+[[243168 109339]
+ [   286    757]]
+
+Subgroup: electrolytes_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 154943
+  → AUC = 0.768
+  → Sensitivity (TPR) = 0.828
+  → Specificity (TNR) = 0.562
+  → Confusion Matrix:
+[[86656 67655]
+ [  109   523]]
+
+Subgroup: gi_protection_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 470378
+  → AUC = 0.783
+  → Sensitivity (TPR) = 0.767
+  → Specificity (TNR) = 0.651
+  → Confusion Matrix:
+[[305431 163410]
+ [   358   1179]]
+
+Subgroup: gi_protection_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 38115
+  → AUC = 0.742
+  → Sensitivity (TPR) = 0.732
+  → Specificity (TNR) = 0.642
+  → Confusion Matrix:
+[[24393 13584]
+ [   37   101]]
+
+Subgroup: parenteral_nutrition_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 458602
+  → AUC = 0.779
+  → Sensitivity (TPR) = 0.765
+  → Specificity (TNR) = 0.647
+  → Confusion Matrix:
+[[295907 161154]
+ [   362   1179]]
+
+Subgroup: parenteral_nutrition_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 49891
+  → AUC = 0.789
+  → Sensitivity (TPR) = 0.754
+  → Specificity (TNR) = 0.682
+  → Confusion Matrix:
+[[33917 15840]
+ [   33   101]]
+
+Subgroup: antiarrhythmics_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 476397
+  → AUC = 0.782
+  → Sensitivity (TPR) = 0.752
+  → Specificity (TNR) = 0.670
+  → Confusion Matrix:
+[[318405 156482]
+ [   375   1135]]
+
+Subgroup: antiarrhythmics_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 32096
+  → AUC = 0.715
+  → Sensitivity (TPR) = 0.879
+  → Specificity (TNR) = 0.358
+  → Confusion Matrix:
+[[11419 20512]
+ [   20   145]]
+
+Subgroup: treatment_given == 0 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 355826
+  → AUC = 0.830
+  → Sensitivity (TPR) = 0.747
+  → Specificity (TNR) = 0.752
+  → Confusion Matrix:
+[[267213  87937]
+ [   171    505]]
+
+Subgroup: treatment_given == 1 | Model: Unnamed Model | Threshold: 0.002635
+  → N = 152667
+  → AUC = 0.658
+  → Sensitivity (TPR) = 0.776
+  → Specificity (TNR) = 0.413
+  → Confusion Matrix:
+[[62611 89057]
+ [  224   775]]
+
+Subgroup: positive_sample == False | Model: Unnamed Model | Threshold: 0.002635
+  → N = 129828
+  → AUC = nan
+  → Sensitivity (TPR) = nan
+  → Specificity (TNR) = 0.815
+  → Confusion Matrix:
+[[105765  24063]
+ [     0      0]]
+
+Subgroup: positive_sample == True | Model: Unnamed Model | Threshold: 0.002635
+  → N = 378665
+  → AUC = 0.750
+  → Sensitivity (TPR) = 0.764
+  → Specificity (TNR) = 0.594
+  → Confusion Matrix:
+[[224059 152931]
+ [   395   1280]]
+
+Subgroup: ethnicity_bin == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 496377
+  → AUC = 0.897
+  → Sensitivity (TPR) = 0.941
+  → Specificity (TNR) = 0.686
+  → Confusion Matrix:
+[[339916 155881]
+ [    34    546]]
+
+Subgroup: ethnicity_bin == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 61338
+  → AUC = 0.899
+  → Sensitivity (TPR) = 0.918
+  → Specificity (TNR) = 0.694
+  → Confusion Matrix:
+[[42499 18754]
+ [    7    78]]
+
+Subgroup: ethnicity_bin == 2 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 23707
+  → AUC = 0.823
+  → Sensitivity (TPR) = 0.700
+  → Specificity (TNR) = 0.756
+  → Confusion Matrix:
+[[17926  5771]
+ [    3     7]]
+
+Subgroup: ethnicity_bin == 3 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 16171
+  → AUC = 0.808
+  → Sensitivity (TPR) = 0.789
+  → Specificity (TNR) = 0.708
+  → Confusion Matrix:
+[[11435  4717]
+ [    4    15]]
+
+Subgroup: ethnicity_bin == 4 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 71215
+  → AUC = 0.852
+  → Sensitivity (TPR) = 0.844
+  → Specificity (TNR) = 0.658
+  → Confusion Matrix:
+[[46764 24329]
+ [   19   103]]
+
+Subgroup: age_bin == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 156505
+  → AUC = 0.893
+  → Sensitivity (TPR) = 0.866
+  → Specificity (TNR) = 0.785
+  → Confusion Matrix:
+[[122771  33637]
+ [    13     84]]
+
+Subgroup: age_bin == 2 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 165437
+  → AUC = 0.888
+  → Sensitivity (TPR) = 0.907
+  → Specificity (TNR) = 0.710
+  → Confusion Matrix:
+[[117343  47890]
+ [    19    185]]
+
+Subgroup: age_bin == 3 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 162057
+  → AUC = 0.885
+  → Sensitivity (TPR) = 0.928
+  → Specificity (TNR) = 0.634
+  → Confusion Matrix:
+[[102502  59278]
+ [    20    257]]
+
+Subgroup: age_bin == 4 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 184809
+  → AUC = 0.871
+  → Sensitivity (TPR) = 0.937
+  → Specificity (TNR) = 0.628
+  → Confusion Matrix:
+[[115924  68647]
+ [    15    223]]
+
+Subgroup: height_bin == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 109301
+  → AUC = 0.872
+  → Sensitivity (TPR) = 0.943
+  → Specificity (TNR) = 0.618
+  → Confusion Matrix:
+[[67443 41718]
+ [    8   132]]
+
+Subgroup: height_bin == 2 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 125360
+  → AUC = 0.869
+  → Sensitivity (TPR) = 0.897
+  → Specificity (TNR) = 0.655
+  → Confusion Matrix:
+[[82070 43135]
+ [   16   139]]
+
+Subgroup: height_bin == 3 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 68439
+  → AUC = 0.903
+  → Sensitivity (TPR) = 0.957
+  → Specificity (TNR) = 0.665
+  → Confusion Matrix:
+[[45477 22869]
+ [    4    89]]
+
+Subgroup: height_bin == 4 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 365708
+  → AUC = 0.896
+  → Sensitivity (TPR) = 0.909
+  → Specificity (TNR) = 0.722
+  → Confusion Matrix:
+[[263550 101730]
+ [    39    389]]
+
+Subgroup: weight_bin == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 181685
+  → AUC = 0.874
+  → Sensitivity (TPR) = 0.907
+  → Specificity (TNR) = 0.680
+  → Confusion Matrix:
+[[123459  58010]
+ [    20    196]]
+
+Subgroup: weight_bin == 2 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 173147
+  → AUC = 0.894
+  → Sensitivity (TPR) = 0.920
+  → Specificity (TNR) = 0.659
+  → Confusion Matrix:
+[[113906  59054]
+ [    15    172]]
+
+Subgroup: weight_bin == 3 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 133093
+  → AUC = 0.879
+  → Sensitivity (TPR) = 0.895
+  → Specificity (TNR) = 0.711
+  → Confusion Matrix:
+[[94554 38367]
+ [   18   154]]
+
+Subgroup: weight_bin == 4 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 180883
+  → AUC = 0.903
+  → Sensitivity (TPR) = 0.942
+  → Specificity (TNR) = 0.701
+  → Confusion Matrix:
+[[126621  54021]
+ [    14    227]]
+
+Subgroup: bmi_bin == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 103569
+  → AUC = 0.872
+  → Sensitivity (TPR) = 0.902
+  → Specificity (TNR) = 0.660
+  → Confusion Matrix:
+[[68254 35183]
+ [   13   119]]
+
+Subgroup: bmi_bin == 2 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 97517
+  → AUC = 0.869
+  → Sensitivity (TPR) = 0.905
+  → Specificity (TNR) = 0.648
+  → Confusion Matrix:
+[[63123 34236]
+ [   15   143]]
+
+Subgroup: bmi_bin == 3 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 104362
+  → AUC = 0.858
+  → Sensitivity (TPR) = 0.916
+  → Specificity (TNR) = 0.629
+  → Confusion Matrix:
+[[65540 38668]
+ [   13   141]]
+
+Subgroup: bmi_bin == 4 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 363360
+  → AUC = 0.907
+  → Sensitivity (TPR) = 0.930
+  → Specificity (TNR) = 0.721
+  → Confusion Matrix:
+[[261623 101365]
+ [    26    346]]
+
+Subgroup: obesity == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 612835
+  → AUC = 0.886
+  → Sensitivity (TPR) = 0.915
+  → Specificity (TNR) = 0.685
+  → Confusion Matrix:
+[[419106 192960]
+ [    65    704]]
+
+Subgroup: obesity == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 55973
+  → AUC = 0.919
+  → Sensitivity (TPR) = 0.957
+  → Specificity (TNR) = 0.705
+  → Confusion Matrix:
+[[39434 16492]
+ [    2    45]]
+
+Subgroup: hypertension == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 272483
+  → AUC = 0.896
+  → Sensitivity (TPR) = 0.912
+  → Specificity (TNR) = 0.690
+  → Confusion Matrix:
+[[187764  84412]
+ [    27    280]]
+
+Subgroup: hypertension == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 396325
+  → AUC = 0.883
+  → Sensitivity (TPR) = 0.921
+  → Specificity (TNR) = 0.684
+  → Confusion Matrix:
+[[270776 125040]
+ [    40    469]]
+
+Subgroup: diabetes == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 472651
+  → AUC = 0.892
+  → Sensitivity (TPR) = 0.921
+  → Specificity (TNR) = 0.698
+  → Confusion Matrix:
+[[329469 142622]
+ [    44    516]]
+
+Subgroup: diabetes == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 196157
+  → AUC = 0.879
+  → Sensitivity (TPR) = 0.910
+  → Specificity (TNR) = 0.659
+  → Confusion Matrix:
+[[129071  66830]
+ [    23    233]]
+
+Subgroup: kidney_disease == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 518745
+  → AUC = 0.888
+  → Sensitivity (TPR) = 0.908
+  → Specificity (TNR) = 0.708
+  → Confusion Matrix:
+[[366823 151335]
+ [    54    533]]
+
+Subgroup: kidney_disease == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 150063
+  → AUC = 0.885
+  → Sensitivity (TPR) = 0.943
+  → Specificity (TNR) = 0.612
+  → Confusion Matrix:
+[[91717 58117]
+ [   13   216]]
+
+Subgroup: lung_disease == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 469359
+  → AUC = 0.887
+  → Sensitivity (TPR) = 0.912
+  → Specificity (TNR) = 0.706
+  → Confusion Matrix:
+[[331047 137777]
+ [    47    488]]
+
+Subgroup: lung_disease == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 199449
+  → AUC = 0.890
+  → Sensitivity (TPR) = 0.929
+  → Specificity (TNR) = 0.640
+  → Confusion Matrix:
+[[127493  71675]
+ [    20    261]]
+
+Subgroup: heart_disease == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 441716
+  → AUC = 0.895
+  → Sensitivity (TPR) = 0.901
+  → Specificity (TNR) = 0.729
+  → Confusion Matrix:
+[[321481 119752]
+ [    48    435]]
+
+Subgroup: heart_disease == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 227092
+  → AUC = 0.874
+  → Sensitivity (TPR) = 0.943
+  → Specificity (TNR) = 0.604
+  → Confusion Matrix:
+[[137059  89700]
+ [    19    314]]
+
+Subgroup: drug_abuse == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 635364
+  → AUC = 0.887
+  → Sensitivity (TPR) = 0.919
+  → Specificity (TNR) = 0.682
+  → Confusion Matrix:
+[[433053 201507]
+ [    65    739]]
+
+Subgroup: drug_abuse == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 33444
+  → AUC = 0.896
+  → Sensitivity (TPR) = 0.833
+  → Specificity (TNR) = 0.762
+  → Confusion Matrix:
+[[25487  7945]
+ [    2    10]]
+
+Subgroup: depression == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 556881
+  → AUC = 0.885
+  → Sensitivity (TPR) = 0.916
+  → Specificity (TNR) = 0.685
+  → Confusion Matrix:
+[[380970 175230]
+ [    57    624]]
+
+Subgroup: depression == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 111927
+  → AUC = 0.905
+  → Sensitivity (TPR) = 0.926
+  → Specificity (TNR) = 0.694
+  → Confusion Matrix:
+[[77570 34222]
+ [   10   125]]
+
+Subgroup: sedatives_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 563514
+  → AUC = 0.891
+  → Sensitivity (TPR) = 0.896
+  → Specificity (TNR) = 0.749
+  → Confusion Matrix:
+[[421882 141160]
+ [    49    423]]
+
+Subgroup: sedatives_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 105294
+  → AUC = 0.814
+  → Sensitivity (TPR) = 0.948
+  → Specificity (TNR) = 0.349
+  → Confusion Matrix:
+[[36658 68292]
+ [   18   326]]
+
+Subgroup: blood_products_transfusions_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 637061
+  → AUC = 0.888
+  → Sensitivity (TPR) = 0.913
+  → Specificity (TNR) = 0.698
+  → Confusion Matrix:
+[[444007 192345]
+ [    62    647]]
+
+Subgroup: blood_products_transfusions_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 31747
+  → AUC = 0.833
+  → Sensitivity (TPR) = 0.953
+  → Specificity (TNR) = 0.459
+  → Confusion Matrix:
+[[14533 17107]
+ [    5   102]]
+
+Subgroup: antibiotics_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 560393
+  → AUC = 0.890
+  → Sensitivity (TPR) = 0.913
+  → Specificity (TNR) = 0.701
+  → Confusion Matrix:
+[[392200 167560]
+ [    55    578]]
+
+Subgroup: antibiotics_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 108415
+  → AUC = 0.874
+  → Sensitivity (TPR) = 0.934
+  → Specificity (TNR) = 0.613
+  → Confusion Matrix:
+[[66340 41892]
+ [   12   171]]
+
+Subgroup: anticoagulants_antiplatelets_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 559642
+  → AUC = 0.890
+  → Sensitivity (TPR) = 0.919
+  → Specificity (TNR) = 0.692
+  → Confusion Matrix:
+[[386709 172257]
+ [    55    621]]
+
+Subgroup: anticoagulants_antiplatelets_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 109166
+  → AUC = 0.878
+  → Sensitivity (TPR) = 0.914
+  → Specificity (TNR) = 0.659
+  → Confusion Matrix:
+[[71831 37195]
+ [   12   128]]
+
+Subgroup: neuromuscular_blockers_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 667276
+  → AUC = 0.886
+  → Sensitivity (TPR) = 0.915
+  → Specificity (TNR) = 0.688
+  → Confusion Matrix:
+[[458251 208233]
+ [    67    725]]
+
+Subgroup: neuromuscular_blockers_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 1532
+  → AUC = 0.691
+  → Sensitivity (TPR) = 1.000
+  → Specificity (TNR) = 0.192
+  → Confusion Matrix:
+[[ 289 1219]
+ [   0   24]]
+
+Subgroup: analgesics_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 561231
+  → AUC = 0.889
+  → Sensitivity (TPR) = 0.892
+  → Specificity (TNR) = 0.734
+  → Confusion Matrix:
+[[411652 149087]
+ [    53    439]]
+
+Subgroup: analgesics_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 107577
+  → AUC = 0.830
+  → Sensitivity (TPR) = 0.957
+  → Specificity (TNR) = 0.437
+  → Confusion Matrix:
+[[46888 60365]
+ [   14   310]]
+
+Subgroup: crystalloids_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 119957
+  → AUC = 0.901
+  → Sensitivity (TPR) = 0.750
+  → Specificity (TNR) = 0.880
+  → Confusion Matrix:
+[[105521  14396]
+ [    10     30]]
+
+Subgroup: crystalloids_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 548851
+  → AUC = 0.879
+  → Sensitivity (TPR) = 0.927
+  → Specificity (TNR) = 0.644
+  → Confusion Matrix:
+[[353019 195056]
+ [    57    719]]
+
+Subgroup: electrolytes_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 555007
+  → AUC = 0.892
+  → Sensitivity (TPR) = 0.911
+  → Specificity (TNR) = 0.703
+  → Confusion Matrix:
+[[389638 164764]
+ [    54    551]]
+
+Subgroup: electrolytes_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 113801
+  → AUC = 0.862
+  → Sensitivity (TPR) = 0.938
+  → Specificity (TNR) = 0.607
+  → Confusion Matrix:
+[[68902 44688]
+ [   13   198]]
+
+Subgroup: gi_protection_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 623071
+  → AUC = 0.891
+  → Sensitivity (TPR) = 0.925
+  → Specificity (TNR) = 0.688
+  → Confusion Matrix:
+[[428448 193854]
+ [    58    711]]
+
+Subgroup: gi_protection_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 45737
+  → AUC = 0.839
+  → Sensitivity (TPR) = 0.809
+  → Specificity (TNR) = 0.659
+  → Confusion Matrix:
+[[30092 15598]
+ [    9    38]]
+
+Subgroup: parenteral_nutrition_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 635321
+  → AUC = 0.887
+  → Sensitivity (TPR) = 0.917
+  → Specificity (TNR) = 0.686
+  → Confusion Matrix:
+[[435234 199307]
+ [    65    715]]
+
+Subgroup: parenteral_nutrition_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 33487
+  → AUC = 0.903
+  → Sensitivity (TPR) = 0.944
+  → Specificity (TNR) = 0.697
+  → Confusion Matrix:
+[[23306 10145]
+ [    2    34]]
+
+Subgroup: antiarrhythmics_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 649690
+  → AUC = 0.886
+  → Sensitivity (TPR) = 0.910
+  → Specificity (TNR) = 0.693
+  → Confusion Matrix:
+[[449643 199304]
+ [    67    676]]
+
+Subgroup: antiarrhythmics_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 19118
+  → AUC = 0.857
+  → Sensitivity (TPR) = 1.000
+  → Specificity (TNR) = 0.467
+  → Confusion Matrix:
+[[ 8897 10148]
+ [    0    73]]
+
+Subgroup: treatment_given == 0 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 595769
+  → AUC = 0.882
+  → Sensitivity (TPR) = 0.840
+  → Specificity (TNR) = 0.770
+  → Confusion Matrix:
+[[458540 136809]
+ [    67    353]]
+
+Subgroup: treatment_given == 1 | Model: Unnamed Model | Threshold: 0.000576
+  → N = 73039
+  → AUC = 0.682
+  → Sensitivity (TPR) = 1.000
+  → Specificity (TNR) = 0.000
+  → Confusion Matrix:
+[[    0 72643]
+ [    0   396]]
+
+Subgroup: positive_sample == False | Model: Unnamed Model | Threshold: 0.000576
+  → N = 387947
+  → AUC = nan
+  → Sensitivity (TPR) = nan
+  → Specificity (TNR) = 0.801
+  → Confusion Matrix:
+[[310716  77231]
+ [     0      0]]
+
+Subgroup: positive_sample == True | Model: Unnamed Model | Threshold: 0.000576
+  → N = 280861
+  → AUC = 0.817
+  → Sensitivity (TPR) = 0.918
+  → Specificity (TNR) = 0.528
+  → Confusion Matrix:
+[[147824 132221]
+ [    67    749]]
+
+Subgroup: ethnicity_bin == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 496377
+  → AUC = 0.862
+  → Sensitivity (TPR) = 0.879
+  → Specificity (TNR) = 0.674
+  → Confusion Matrix:
+[[333927 161870]
+ [    70    510]]
+
+Subgroup: ethnicity_bin == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 61338
+  → AUC = 0.880
+  → Sensitivity (TPR) = 0.882
+  → Specificity (TNR) = 0.684
+  → Confusion Matrix:
+[[41915 19338]
+ [   10    75]]
+
+Subgroup: ethnicity_bin == 2 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 23707
+  → AUC = 0.759
+  → Sensitivity (TPR) = 0.700
+  → Specificity (TNR) = 0.731
+  → Confusion Matrix:
+[[17318  6379]
+ [    3     7]]
+
+Subgroup: ethnicity_bin == 3 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 16171
+  → AUC = 0.816
+  → Sensitivity (TPR) = 0.789
+  → Specificity (TNR) = 0.742
+  → Confusion Matrix:
+[[11982  4170]
+ [    4    15]]
+
+Subgroup: ethnicity_bin == 4 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 71215
+  → AUC = 0.827
+  → Sensitivity (TPR) = 0.779
+  → Specificity (TNR) = 0.670
+  → Confusion Matrix:
+[[47637 23456]
+ [   27    95]]
+
+Subgroup: age_bin == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 156505
+  → AUC = 0.847
+  → Sensitivity (TPR) = 0.814
+  → Specificity (TNR) = 0.769
+  → Confusion Matrix:
+[[120263  36145]
+ [    18     79]]
+
+Subgroup: age_bin == 2 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 165437
+  → AUC = 0.856
+  → Sensitivity (TPR) = 0.819
+  → Specificity (TNR) = 0.707
+  → Confusion Matrix:
+[[116876  48357]
+ [    37    167]]
+
+Subgroup: age_bin == 3 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 162057
+  → AUC = 0.853
+  → Sensitivity (TPR) = 0.888
+  → Specificity (TNR) = 0.632
+  → Confusion Matrix:
+[[102218  59562]
+ [    31    246]]
+
+Subgroup: age_bin == 4 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 184809
+  → AUC = 0.847
+  → Sensitivity (TPR) = 0.882
+  → Specificity (TNR) = 0.615
+  → Confusion Matrix:
+[[113422  71149]
+ [    28    210]]
+
+Subgroup: height_bin == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 109301
+  → AUC = 0.833
+  → Sensitivity (TPR) = 0.879
+  → Specificity (TNR) = 0.616
+  → Confusion Matrix:
+[[67256 41905]
+ [   17   123]]
+
+Subgroup: height_bin == 2 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 125360
+  → AUC = 0.846
+  → Sensitivity (TPR) = 0.852
+  → Specificity (TNR) = 0.643
+  → Confusion Matrix:
+[[80456 44749]
+ [   23   132]]
+
+Subgroup: height_bin == 3 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 68439
+  → AUC = 0.877
+  → Sensitivity (TPR) = 0.892
+  → Specificity (TNR) = 0.637
+  → Confusion Matrix:
+[[43560 24786]
+ [   10    83]]
+
+Subgroup: height_bin == 4 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 365708
+  → AUC = 0.863
+  → Sensitivity (TPR) = 0.850
+  → Specificity (TNR) = 0.716
+  → Confusion Matrix:
+[[261507 103773]
+ [    64    364]]
+
+Subgroup: weight_bin == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 181685
+  → AUC = 0.851
+  → Sensitivity (TPR) = 0.843
+  → Specificity (TNR) = 0.675
+  → Confusion Matrix:
+[[122533  58936]
+ [    34    182]]
+
+Subgroup: weight_bin == 2 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 173147
+  → AUC = 0.876
+  → Sensitivity (TPR) = 0.898
+  → Specificity (TNR) = 0.653
+  → Confusion Matrix:
+[[112912  60048]
+ [    19    168]]
+
+Subgroup: weight_bin == 3 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 133093
+  → AUC = 0.817
+  → Sensitivity (TPR) = 0.762
+  → Specificity (TNR) = 0.711
+  → Confusion Matrix:
+[[94513 38408]
+ [   41   131]]
+
+Subgroup: weight_bin == 4 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 180883
+  → AUC = 0.877
+  → Sensitivity (TPR) = 0.917
+  → Specificity (TNR) = 0.680
+  → Confusion Matrix:
+[[122821  57821]
+ [    20    221]]
+
+Subgroup: bmi_bin == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 103569
+  → AUC = 0.862
+  → Sensitivity (TPR) = 0.856
+  → Specificity (TNR) = 0.664
+  → Confusion Matrix:
+[[68653 34784]
+ [   19   113]]
+
+Subgroup: bmi_bin == 2 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 97517
+  → AUC = 0.839
+  → Sensitivity (TPR) = 0.835
+  → Specificity (TNR) = 0.657
+  → Confusion Matrix:
+[[64005 33354]
+ [   26   132]]
+
+Subgroup: bmi_bin == 3 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 104362
+  → AUC = 0.825
+  → Sensitivity (TPR) = 0.857
+  → Specificity (TNR) = 0.614
+  → Confusion Matrix:
+[[64026 40182]
+ [   22   132]]
+
+Subgroup: bmi_bin == 4 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 363360
+  → AUC = 0.870
+  → Sensitivity (TPR) = 0.874
+  → Specificity (TNR) = 0.706
+  → Confusion Matrix:
+[[256095 106893]
+ [    47    325]]
+
+Subgroup: obesity == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 612835
+  → AUC = 0.857
+  → Sensitivity (TPR) = 0.860
+  → Specificity (TNR) = 0.678
+  → Confusion Matrix:
+[[415236 196830]
+ [   108    661]]
+
+Subgroup: obesity == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 55973
+  → AUC = 0.852
+  → Sensitivity (TPR) = 0.872
+  → Specificity (TNR) = 0.671
+  → Confusion Matrix:
+[[37543 18383]
+ [    6    41]]
+
+Subgroup: hypertension == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 272483
+  → AUC = 0.858
+  → Sensitivity (TPR) = 0.860
+  → Specificity (TNR) = 0.683
+  → Confusion Matrix:
+[[185876  86300]
+ [    43    264]]
+
+Subgroup: hypertension == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 396325
+  → AUC = 0.855
+  → Sensitivity (TPR) = 0.861
+  → Specificity (TNR) = 0.674
+  → Confusion Matrix:
+[[266903 128913]
+ [    71    438]]
+
+Subgroup: diabetes == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 472651
+  → AUC = 0.860
+  → Sensitivity (TPR) = 0.859
+  → Specificity (TNR) = 0.691
+  → Confusion Matrix:
+[[326197 145894]
+ [    79    481]]
+
+Subgroup: diabetes == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 196157
+  → AUC = 0.848
+  → Sensitivity (TPR) = 0.863
+  → Specificity (TNR) = 0.646
+  → Confusion Matrix:
+[[126582  69319]
+ [    35    221]]
+
+Subgroup: kidney_disease == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 518745
+  → AUC = 0.854
+  → Sensitivity (TPR) = 0.843
+  → Specificity (TNR) = 0.702
+  → Confusion Matrix:
+[[363694 154464]
+ [    92    495]]
+
+Subgroup: kidney_disease == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 150063
+  → AUC = 0.858
+  → Sensitivity (TPR) = 0.904
+  → Specificity (TNR) = 0.595
+  → Confusion Matrix:
+[[89085 60749]
+ [   22   207]]
+
+Subgroup: lung_disease == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 469359
+  → AUC = 0.852
+  → Sensitivity (TPR) = 0.850
+  → Specificity (TNR) = 0.697
+  → Confusion Matrix:
+[[326923 141901]
+ [    80    455]]
+
+Subgroup: lung_disease == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 199449
+  → AUC = 0.863
+  → Sensitivity (TPR) = 0.879
+  → Specificity (TNR) = 0.632
+  → Confusion Matrix:
+[[125856  73312]
+ [    34    247]]
+
+Subgroup: heart_disease == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 441716
+  → AUC = 0.858
+  → Sensitivity (TPR) = 0.836
+  → Specificity (TNR) = 0.721
+  → Confusion Matrix:
+[[318012 123221]
+ [    79    404]]
+
+Subgroup: heart_disease == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 227092
+  → AUC = 0.850
+  → Sensitivity (TPR) = 0.895
+  → Specificity (TNR) = 0.594
+  → Confusion Matrix:
+[[134767  91992]
+ [    35    298]]
+
+Subgroup: drug_abuse == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 635364
+  → AUC = 0.855
+  → Sensitivity (TPR) = 0.861
+  → Specificity (TNR) = 0.674
+  → Confusion Matrix:
+[[427880 206680]
+ [   112    692]]
+
+Subgroup: drug_abuse == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 33444
+  → AUC = 0.901
+  → Sensitivity (TPR) = 0.833
+  → Specificity (TNR) = 0.745
+  → Confusion Matrix:
+[[24899  8533]
+ [    2    10]]
+
+Subgroup: depression == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 556881
+  → AUC = 0.854
+  → Sensitivity (TPR) = 0.858
+  → Specificity (TNR) = 0.677
+  → Confusion Matrix:
+[[376757 179443]
+ [    97    584]]
+
+Subgroup: depression == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 111927
+  → AUC = 0.870
+  → Sensitivity (TPR) = 0.874
+  → Specificity (TNR) = 0.680
+  → Confusion Matrix:
+[[76022 35770]
+ [   17   118]]
+
+Subgroup: sedatives_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 563514
+  → AUC = 0.848
+  → Sensitivity (TPR) = 0.807
+  → Specificity (TNR) = 0.748
+  → Confusion Matrix:
+[[420945 142097]
+ [    91    381]]
+
+Subgroup: sedatives_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 105294
+  → AUC = 0.788
+  → Sensitivity (TPR) = 0.933
+  → Specificity (TNR) = 0.303
+  → Confusion Matrix:
+[[31834 73116]
+ [   23   321]]
+
+Subgroup: blood_products_transfusions_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 637061
+  → AUC = 0.856
+  → Sensitivity (TPR) = 0.855
+  → Specificity (TNR) = 0.690
+  → Confusion Matrix:
+[[439013 197339]
+ [   103    606]]
+
+Subgroup: blood_products_transfusions_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 31747
+  → AUC = 0.803
+  → Sensitivity (TPR) = 0.897
+  → Specificity (TNR) = 0.435
+  → Confusion Matrix:
+[[13766 17874]
+ [   11    96]]
+
+Subgroup: antibiotics_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 560393
+  → AUC = 0.856
+  → Sensitivity (TPR) = 0.850
+  → Specificity (TNR) = 0.695
+  → Confusion Matrix:
+[[389304 170456]
+ [    95    538]]
+
+Subgroup: antibiotics_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 108415
+  → AUC = 0.849
+  → Sensitivity (TPR) = 0.896
+  → Specificity (TNR) = 0.586
+  → Confusion Matrix:
+[[63475 44757]
+ [   19   164]]
+
+Subgroup: anticoagulants_antiplatelets_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 559642
+  → AUC = 0.856
+  → Sensitivity (TPR) = 0.857
+  → Specificity (TNR) = 0.684
+  → Confusion Matrix:
+[[382155 176811]
+ [    97    579]]
+
+Subgroup: anticoagulants_antiplatelets_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 109166
+  → AUC = 0.858
+  → Sensitivity (TPR) = 0.879
+  → Specificity (TNR) = 0.648
+  → Confusion Matrix:
+[[70624 38402]
+ [   17   123]]
+
+Subgroup: neuromuscular_blockers_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 667276
+  → AUC = 0.854
+  → Sensitivity (TPR) = 0.856
+  → Specificity (TNR) = 0.679
+  → Confusion Matrix:
+[[452704 213780]
+ [   114    678]]
+
+Subgroup: neuromuscular_blockers_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 1532
+  → AUC = 0.685
+  → Sensitivity (TPR) = 1.000
+  → Specificity (TNR) = 0.050
+  → Confusion Matrix:
+[[  75 1433]
+ [   0   24]]
+
+Subgroup: analgesics_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 561231
+  → AUC = 0.851
+  → Sensitivity (TPR) = 0.819
+  → Specificity (TNR) = 0.731
+  → Confusion Matrix:
+[[409902 150837]
+ [    89    403]]
+
+Subgroup: analgesics_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 107577
+  → AUC = 0.801
+  → Sensitivity (TPR) = 0.923
+  → Specificity (TNR) = 0.400
+  → Confusion Matrix:
+[[42877 64376]
+ [   25   299]]
+
+Subgroup: crystalloids_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 119957
+  → AUC = 0.901
+  → Sensitivity (TPR) = 0.725
+  → Specificity (TNR) = 0.911
+  → Confusion Matrix:
+[[109204  10713]
+ [    11     29]]
+
+Subgroup: crystalloids_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 548851
+  → AUC = 0.842
+  → Sensitivity (TPR) = 0.867
+  → Specificity (TNR) = 0.627
+  → Confusion Matrix:
+[[343575 204500]
+ [   103    673]]
+
+Subgroup: electrolytes_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 555007
+  → AUC = 0.864
+  → Sensitivity (TPR) = 0.858
+  → Specificity (TNR) = 0.695
+  → Confusion Matrix:
+[[385520 168882]
+ [    86    519]]
+
+Subgroup: electrolytes_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 113801
+  → AUC = 0.821
+  → Sensitivity (TPR) = 0.867
+  → Specificity (TNR) = 0.592
+  → Confusion Matrix:
+[[67259 46331]
+ [   28   183]]
+
+Subgroup: gi_protection_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 623071
+  → AUC = 0.860
+  → Sensitivity (TPR) = 0.866
+  → Specificity (TNR) = 0.681
+  → Confusion Matrix:
+[[423494 198808]
+ [   103    666]]
+
+Subgroup: gi_protection_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 45737
+  → AUC = 0.790
+  → Sensitivity (TPR) = 0.766
+  → Specificity (TNR) = 0.641
+  → Confusion Matrix:
+[[29285 16405]
+ [   11    36]]
+
+Subgroup: parenteral_nutrition_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 635321
+  → AUC = 0.855
+  → Sensitivity (TPR) = 0.859
+  → Specificity (TNR) = 0.678
+  → Confusion Matrix:
+[[430206 204335]
+ [   110    670]]
+
+Subgroup: parenteral_nutrition_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 33487
+  → AUC = 0.894
+  → Sensitivity (TPR) = 0.889
+  → Specificity (TNR) = 0.675
+  → Confusion Matrix:
+[[22573 10878]
+ [    4    32]]
+
+Subgroup: antiarrhythmics_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 649690
+  → AUC = 0.853
+  → Sensitivity (TPR) = 0.849
+  → Specificity (TNR) = 0.685
+  → Confusion Matrix:
+[[444509 204438]
+ [   112    631]]
+
+Subgroup: antiarrhythmics_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 19118
+  → AUC = 0.840
+  → Sensitivity (TPR) = 0.973
+  → Specificity (TNR) = 0.434
+  → Confusion Matrix:
+[[ 8270 10775]
+ [    2    71]]
+
+Subgroup: treatment_given == 0 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 595769
+  → AUC = 0.882
+  → Sensitivity (TPR) = 0.867
+  → Specificity (TNR) = 0.727
+  → Confusion Matrix:
+[[432587 162762]
+ [    56    364]]
+
+Subgroup: treatment_given == 1 | Model: Unnamed Model | Threshold: 0.000749
+  → N = 73039
+  → AUC = 0.672
+  → Sensitivity (TPR) = 0.854
+  → Specificity (TNR) = 0.278
+  → Confusion Matrix:
+[[20192 52451]
+ [   58   338]]
+
+Subgroup: positive_sample == False | Model: Unnamed Model | Threshold: 0.000749
+  → N = 387947
+  → AUC = nan
+  → Sensitivity (TPR) = nan
+  → Specificity (TNR) = 0.764
+  → Confusion Matrix:
+[[296525  91422]
+ [     0      0]]
+
+Subgroup: positive_sample == True | Model: Unnamed Model | Threshold: 0.000749
+  → N = 280861
+  → AUC = 0.806
+  → Sensitivity (TPR) = 0.860
+  → Specificity (TNR) = 0.558
+  → Confusion Matrix:
+[[156254 123791]
+ [   114    702]]
+
