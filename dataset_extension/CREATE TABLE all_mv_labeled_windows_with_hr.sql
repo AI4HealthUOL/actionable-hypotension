@@ -2,7 +2,7 @@
 -- Drop the existing table if it exists
 DROP TABLE IF EXISTS evaluation.all_mv_labeled_windows_with_heart_rate;
 
--- Create a table of labeled context windows with associated MAP values
+-- Create a table of labeled context windows with associated heart rate values
 -- Only includes values in range 30–200 and of types 220052, 225312, 220181
 -- MAP values are stored as JSON objects with relative time ("pos") and value
 -- Also counts the number of values per window
@@ -16,7 +16,7 @@ WITH filtered_ce AS (
     itemid
   FROM mimiciii.chartevents
   WHERE valuenum IS NOT NULL
-    AND valuenum BETWEEN 0 AND 300
+    AND valuenum BETWEEN 30 AND 200
     AND itemid = 220045
 ),
 hr_agg AS (

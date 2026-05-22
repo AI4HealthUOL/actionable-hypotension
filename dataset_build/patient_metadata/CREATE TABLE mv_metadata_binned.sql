@@ -45,7 +45,7 @@ iqr_values AS (
 
     CASE 
       WHEN height < i.height_q1 THEN 1
-      WHEN height >= i.height_q1 AND height < ((i.height_q1 + i.height_q3)/2) THEN 2
+      WHEN height >= i.height_q1 AND height < ((i.height_q1 + i.height_q3)/2) THEN 2 -- this is the midpoint of the iqr: not the median! this distorts the quartiles
       WHEN height >= ((i.height_q1 + i.height_q3)/2) AND height < i.height_q3 THEN 3
       ELSE 4
     END AS height_bin,

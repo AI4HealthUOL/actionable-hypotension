@@ -22,26 +22,21 @@ import joblib
 # UNCALIBRATED_MODELS_DIR = "../models/uncalibrated"
 # CALIBRATED_MODELS_DIR = "../models/calibrated"
 
-UNCALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/models_given/uncalibrated"
-CALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/extended_evaluation_review/models_calibrated_unbundled"
+UNCALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/models_hr_extended_uc"
+CALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/models_hr_extended_c"
 
 def load_and_prepare_validation_data(table_name, drop_treatment_given=False, drop_only_2_values=False):
-    
-    print("CWD:", os.getcwd())
-    print("\n--- sys.path ---")
-    for p in sys.path:
-        print(p)
     
     
 
     DATABASE_URI = "postgresql+psycopg2://rirg2545@localhost:5434/mimic"
     engine = create_engine(DATABASE_URI, future=True)
     df = pd.read_sql(f"""
-        SELECT * FROM ce_approach.{table_name}
+        SELECT * FROM evaluation.{table_name}
         WHERE split IN ('val', 'test')
     """, engine)
 
-    drop_cols = ["subject_id", "icustay_id", "context_start", "context_end"]
+    drop_cols = ["subject_id", "icustay_id", "context_start", "context_end", "hr_only_2_values"]
     df = df.drop(columns=[c for c in drop_cols if c in df.columns])
     
     
@@ -53,6 +48,7 @@ def load_and_prepare_validation_data(table_name, drop_treatment_given=False, dro
         df = df.drop(columns=["treatment_given"])
     if drop_only_2_values:
         df = df.drop(columns=["only_2_values"])
+        
     
     feature_cols = [c for c in df.columns if c not in excluded]
 

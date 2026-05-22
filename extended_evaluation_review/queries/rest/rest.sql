@@ -38,3 +38,22 @@ SELECT
         ELSE 'other'
     END AS patient_type
 FROM mimiciii.icustays
+
+
+SELECT 
+    patient_type,
+    COUNT(DISTINCT icustay_id) AS n,
+    ROUND(100.0 * COUNT(DISTINCT icustay_id) / SUM(COUNT(DISTINCT icustay_id)) OVER (), 1) AS pct
+FROM evaluation.surgery_vs_no_surgery_patients
+WHERE patient_type IN ('surgical', 'non-surgical')
+GROUP BY patient_type
+
+UNION ALL
+
+SELECT
+    'cardiac surgery' AS patient_type,
+    COUNT(DISTINCT icustay_id) AS n,
+    ROUND(100.0 * COUNT(DISTINCT icustay_id) / 
+        (SELECT COUNT(DISTINCT icustay_id) FROM evaluation.surgery_vs_no_surgery_patients 
+         WHERE patient_type IN ('surgical', 'non-surgical')), 1) AS pct
+FROM evaluation.heart_surgery_patients53.9

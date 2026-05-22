@@ -1,8 +1,9 @@
+-- Active: 1768480900465@@localhost@5434@mimic
 -- Computes descriptive & trend statistics over JSONB time‑series windows in manageable chunks.
 -- Dynamically handles any source/target table pair by physically ordering by icustay_id and context_start,
 -- adding a row_id surrogate, and batching per range to limit memory usage and enforce transactional boundaries.
 -- Produces: mean, median, min, max, std, IQR, first/last values, rate of change, slope, weighted mean, and a two‑value flag.
-CREATE OR REPLACE PROCEDURE ce_approach.compute_window_stats(
+CREATE OR REPLACE PROCEDURE evaluation.compute_hr_window_stats(
   src_table  TEXT,
   tgt_table  TEXT,
   chunk_size INTEGER DEFAULT 10000  -- Number of rows to process per batch
@@ -48,18 +49,14 @@ BEGIN
       icustay_id     bigint,       -- ICU stay identifier
       context_start  timestamp,    -- Window start (no timezone)
       context_end    timestamp,    -- Window end (no timezone)
-      mean           double precision,
-      median         double precision,
-      min            double precision,
-      max            double precision,
-      std            double precision,
-      iqr            double precision,
-      first          double precision,
-      last           double precision,
-      rate_change    double precision,
-      slope          double precision,
-      weighted_mean  double precision,
-      only_2_values  boolean       -- True if exactly two readings in window
+      hr_mean           double precision,
+      hr_median         double precision,
+      hr_std            double precision,
+      hr_iqr            double precision,
+      hr_first          double precision,
+      hr_last           double precision,
+      hr_slope          double precision,
+      hr_only_2_values  boolean       -- True if exactly two readings in window
     )
   $t$, tgt_table);
 
@@ -93,7 +90,7 @@ BEGIN
           (e::jsonb->>'pos')  ::double precision AS pos,
           (e::jsonb->>'value')::double precision AS val
         FROM %2$s AS aw
-        CROSS JOIN LATERAL UNNEST(aw.map_values) AS e
+        CROSS JOIN LATERAL UNNEST(aw.hr_values) AS e
         WHERE aw.row_id BETWEEN %3$L AND %4$L
       ),
       max_pos AS (
@@ -107,17 +104,13 @@ BEGIN
           icustay_id,
           context_start,
           context_end,
-          AVG(val)                                    AS mean,
-          PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY val) AS median,
-          MIN(val)                                    AS min,
-          MAX(val)                                    AS max,
-          STDDEV(val)                                 AS std,
+          AVG(val)                                    AS hr_mean,
+          PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY val) AS hr_median,
+          STDDEV(val)                                 AS hr_std,
           (PERCENTILE_CONT(0.75) WITHIN GROUP(ORDER BY val)
-           - PERCENTILE_CONT(0.25) WITHIN GROUP(ORDER BY val)) AS iqr,
-          COUNT(*)                                    AS cnt,
-          REGR_SLOPE(val, pos)                        AS slope,
-          SUM(val * EXP(pos / max_pos)) / NULLIF(SUM(EXP(pos / max_pos)),0)
-                                                     AS weighted_mean
+           - PERCENTILE_CONT(0.25) WITHIN GROUP(ORDER BY val)) AS hr_iqr,
+          COUNT(*)                                    AS hr_cnt,
+          REGR_SLOPE(val, pos)                        AS hr_slope
         FROM exploded e
         JOIN max_pos m USING(row_id)
         GROUP BY row_id, icustay_id, context_start, context_end
@@ -128,8 +121,8 @@ BEGIN
           icustay_id,
           context_start,
           context_end,
-          (array_agg(val ORDER BY pos))[1]      AS first,  -- earliest reading
-          (array_agg(val ORDER BY pos DESC))[1] AS last   -- latest reading
+          (array_agg(val ORDER BY pos))[1]      AS hr_first,  -- earliest reading
+          (array_agg(val ORDER BY pos DESC))[1] AS hr_last   -- latest reading
         FROM exploded
         GROUP BY row_id, icustay_id, context_start, context_end
       )
@@ -139,18 +132,14 @@ BEGIN
         s.icustay_id,
         s.context_start,
         s.context_end,
-        s.mean,
-        s.median,
-        s.min,
-        s.max,
-        s.std,
-        s.iqr,
-        fl.first,
-        fl.last,
-        CASE WHEN fl.first <> 0 THEN (fl.last - fl.first)/fl.first ELSE NULL END AS rate_change,
-        s.slope,
-        s.weighted_mean,
-        (s.cnt = 2)                                       AS only_2_values
+        s.hr_mean,
+        s.hr_median,
+        s.hr_std,
+        s.hr_iqr,
+        fl.hr_first,
+        fl.hr_last,
+        s.hr_slope,
+        (s.hr_cnt = 2)                                       AS hr_only_2_values
       FROM stats s
       JOIN first_last fl USING(row_id, icustay_id, context_start, context_end)
     $q$, tgt_table, src_table, start_id, end_id);
@@ -166,20 +155,8 @@ END;
 $$;
 
 
--- compute statistical features of invasive_windows
-CALL ce_approach.compute_window_stats(
-  'ce_approach.invasive_windows',
-  'ce_approach.invasive_windows_statistical_features'
-);
-
--- compute statistical features of noninvasive_windows
-CALL ce_approach.compute_window_stats(
-  'ce_approach.noninvasive_windows',
-  'ce_approach.noninvasive_windows_statistical_features'
-);
-
--- compute statistical features of mix_windows
-CALL ce_approach.compute_window_stats(
-  'ce_approach.mix_windows',
-  'ce_approach.mix_windows_statistical_features'
+-- compute statistical features of heartrate
+CALL evaluation.compute_hr_window_stats(
+  'evaluation.all_mv_labeled_windows_with_heart_rate',
+  'evaluation.hr_windows_statistical_features'
 );
