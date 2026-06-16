@@ -4,7 +4,9 @@
 --        2) Positive Event? (is there at least one vasopressor administration in the current target window?)
 --        3) Treatment Count (how many active vasopressor treatments are there at the time of the current context window?))
 
-CREATE TABLE ce_approach.all_mv_labeled_windows AS 
+
+-- EXTENSION: to positive_event 15 min, 30 min and 60 min! 
+CREATE TABLE ce_approach.all_mv_labeled_windows_extended AS 
 SELECT
   w.*,
   -- Whether the icustay is a positive sample or not
@@ -12,7 +14,7 @@ SELECT
       SELECT 1 FROM ce_approach.linkorder_treatment_events t
       WHERE t.icustay_id = w.icustay_id
   ) THEN TRUE ELSE FALSE END AS positive_sample,
-  -- Whether any VP administration starts in the current target window
+  -- Whether any VP administration starts in the 15 min, 30 min or 60 min target window
   CASE WHEN EXISTS (
       SELECT 1 FROM ce_approach.linkorder_treatment_events t
       WHERE t.icustay_id = w.icustay_id

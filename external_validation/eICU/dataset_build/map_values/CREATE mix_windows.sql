@@ -17,8 +17,7 @@ CREATE INDEX idx_split_map_values_3 ON public.split_map_values(pos);
 
 
 -- Rebuild mix_windows with a single non‑invasive value per pos
---CREATE TABLE public.mix_windows AS
-
+CREATE TABLE public.mix_windows AS
 WITH per_pos AS (
   SELECT
     patientunitstayid AS icustay_id,
