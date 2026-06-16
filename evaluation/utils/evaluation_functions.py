@@ -19,16 +19,38 @@ from scipy.ndimage import gaussian_filter1d
 from scipy.integrate import trapezoid
 from matplotlib.colors import Normalize
 from matplotlib.cm import ScalarMappable
-from utils.db_interface import get_engine
+from sqlalchemy import create_engine
+DATABASE_URI = "postgresql+psycopg2://rirg2545@localhost:5434/mimic"
+
 
 sys.path.append("..")
 
 
 CALIBRATED_MODELS_DIR = "../models/calibrated"
-DATABASE_URI = "postgresql+psycopg2://rirg2545@localhost/mimic"
 FIGURES_DIR = "figures"
 
-def load_and_prepare_data_xgb(table_name: str, drop_treatment_given: bool = False, drop_only_2_values: bool = False):
+# add subgroup logic
+def classify_last_map(map_json_list):
+    #print("I got:", map_json_list)
+    #print("Type:", type(map_json_list))
+    try:
+        last_value = float(map_json_list[-1]['value'])
+        #print(last_value)
+        if last_value <= 65:
+            return 1
+        elif 65 < last_value <= 75:
+            return 2
+        elif 75 < last_value <= 100:
+            return 3
+        elif last_value > 100:
+            return 4
+        else:
+            return 0  
+    except:
+        print("problem!!")
+        return 0  # Parsing error oder ungültig
+    
+def load_and_prepare_data_xgb(table_name: str):
     """
     Loads and prepares validation and test data from the database.
 
@@ -39,23 +61,59 @@ def load_and_prepare_data_xgb(table_name: str, drop_treatment_given: bool = Fals
     Returns:
         x_val, y_val, x_test, y_test, feature_cols
     """
-    engine = get_engine()
-
+    engine = create_engine(DATABASE_URI, future=True)
     df = pd.read_sql(f"""
         SELECT * FROM ce_approach.{table_name}
         WHERE split IN ('val', 'test')
     """, engine)
 
-    drop_cols = ["subject_id", "icustay_id", "context_start", "context_end"]
+    drop_cols = ["icustay_id", "context_start","context_end", "only_2_values", "treatment_given", "subject_id"] 
     df = df.drop(columns=[c for c in drop_cols if c in df.columns])
 
     df["label"] = df["positive_event"].astype(int)
+    """
+    #Subgroup analysis logic added 
 
-    excluded_cols = {"positive_event", "positive_sample", "split", "label"}
-    if drop_treatment_given:
-        excluded_cols.add("treatment_given")
-    if drop_only_2_values:
-        excluded_cols.add("only_2_values")
+    # map_value_df = pd.read_sql(f
+    # SELECT m.icustay_id, m.context_start, m.map_values
+    # FROM ce_approach.mix_windows m
+    # JOIN ce_approach.split_all_subjects s ON m.subject_id = s.subject_id
+    # WHERE s.split = 'test'
+    # , engine)
+
+    # map_value_df["map_elevation_range"] = map_value_df["map_values"].apply(classify_last_map)
+    # map_value_df = map_value_df.drop(columns="map_values")  
+
+    # df = df.merge(map_value_df, on=["icustay_id", "context_start"], how="left")
+
+    excluded_cols = ["positive_event", "positive_sample", "split", "label", "map_elevation_range", "icustay_id", "context_start",
+    "only_2_values", "treatment_given"]  
+
+
+     # Drucke die Spalten von df zur Überprüfung
+    print("Alle Spalten in df:", df.columns.tolist())
+
+    # Filtere feature_cols: Nur Spalten, die nicht in excluded_cols sind
+    feature_cols = [c for c in df.columns if c not in excluded_cols]
+
+    print("Feature-Spalten:", feature_cols)  # Sollte keine der excluded_cols enthalten
+
+    val_df = df[df["split"] == "val"]
+    test_df = df[df["split"] == "test"]
+
+    # Filtere die Testdaten für die Subgruppe (map_elevation_range = 2)
+    #test_df_subgroup = test_df[test_df["map_elevation_range"] == 2]
+    
+    # Extrahiere x und y für Validierung und Test (Subgruppe)
+    x_val = val_df[feature_cols]
+    y_val = val_df["label"]
+
+    #x_test = test_df_subgroup[feature_cols]
+    #y_test = test_df_subgroup["label"]
+####### subgroup analysis ######
+    """
+
+    excluded_cols = {"positive_event", "positive_sample", "split", "label","map_values"}
 
     feature_cols = [c for c in df.columns if c not in excluded_cols]
 
@@ -75,8 +133,7 @@ def load_and_prepare_data_baseline():
     Load the last MAP value (last_map) and binary event label from the database.
     Splits: train / val / test
     """
-    engine = get_engine()
-    
+
     query = """
     SELECT
         mw.subject_id,
@@ -92,8 +149,8 @@ def load_and_prepare_data_baseline():
     ) last_map_elem ON TRUE
     JOIN ce_approach.split_all_subjects sm
     ON mw.subject_id = sm.subject_id
-    WHERE sm.split IN ('train', 'val', 'test')
     """
+    engine = create_engine(DATABASE_URI, future=True)
     df = pd.read_sql(query, engine)
     df["label"] = df["positive_event"].astype(int)
 

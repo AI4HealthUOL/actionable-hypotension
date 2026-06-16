@@ -1,0 +1,82 @@
+Drop table if exists all_labeled_windows_with_map_values;
+
+Drop table if exists public.batch_progress;
+
+-- Erstelle eine temporäre Tabelle für die Ergebnisse
+-- Temporäre Tabelle mit expliziten Datentypen erstellen
+-- Dauerhafte Tabelle mit der korrekten Struktur erstellen
+CREATE TABLE public.all_labeled_windows_with_map_values (
+  patienthealthsystemstayid INT,
+  patientunitstayid INT,
+  context_start_offset_min INT,
+  context_end_offset_min INT,
+  target_start_offset_min INT,
+  target_end_offset_min INT,
+  positive_sample BOOLEAN,
+  positive_event BOOLEAN,
+  value_count INT,
+  -- CSV-String für die MAP-Werte (Format: "pos:value:type;pos:value:type;...")
+  ma_values_csv TEXT
+);
+
+
+-- Verarbeite die Daten in Batches (z. B. pro 10000 context windows)
+DO $$
+DECLARE
+  batch_size INT := 100000;
+  offset_val INT := 0;
+  total_windows INT;
+BEGIN
+  -- Ermittle die Gesamtzahl der Fenster
+  SELECT COUNT(*) INTO total_windows
+  FROM public.all_labeled_windows;
+
+  -- Verarbeite die Daten in Batches
+  WHILE offset_val < total_windows LOOP
+    -- Verarbeite den aktuellen Batch und füge die Daten ein
+    INSERT INTO public.all_labeled_windows_with_map_values
+    WITH batch_windows AS (
+      SELECT * FROM public.all_labeled_windows
+      ORDER BY patientunitstayid, context_start_offset_min
+      LIMIT batch_size OFFSET offset_val
+    ),
+    map_agg AS (
+      SELECT
+        w.patienthealthsystemstayid,
+        w.patientunitstayid,
+        w.context_start_offset_min,
+        w.context_end_offset_min,
+        w.target_start_offset_min,
+        w.target_end_offset_min,
+        w.positive_sample,
+        w.positive_event,
+        COUNT(ma.valuenum) AS value_count,
+        STRING_AGG(
+          CONCAT(
+            'pos:', ma.offset - w.context_start_offset_min, '|',
+            'value:', ma.valuenum, '|',
+            'type:', ma.source
+          ),
+          ';'
+          ORDER BY ma.offset
+        ) AS ma_values_csv
+      FROM batch_windows w
+      LEFT JOIN public.filtered_maps ma
+        ON ma.patientunitstayid = w.patientunitstayid
+        AND ma.offset BETWEEN w.context_start_offset_min AND w.context_end_offset_min
+      GROUP BY
+        w.patienthealthsystemstayid, w.patientunitstayid, w.context_start_offset_min, w.context_end_offset_min,
+        w.target_start_offset_min, w.target_end_offset_min,
+        w.positive_sample, w.positive_event
+      HAVING COUNT(ma.valuenum) > 2  -- Filtere direkt in der Aggregation
+    )
+    SELECT * FROM map_agg;  -- Wichtig: Hier werden die Daten ausgewählt, die eingefügt werden sollen
+
+    -- Keep-Alive-Abfrage, um die Verbindung aktiv zu halten
+    PERFORM 1;
+
+    -- Erhöhe den Offset für den nächsten Batch
+    offset_val := offset_val + batch_size;
+    RAISE NOTICE 'Verarbeite Batch: % bis %', offset_val - batch_size + 1, offset_val;
+  END LOOP;
+END $$;

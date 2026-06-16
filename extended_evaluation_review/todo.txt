@@ -1,0 +1,21 @@
+1) Patienten exkludieren die speziell sind: 
+    - Patient nach Organtransplantation: Leber Niere Herz und Lunge
+    - Schlaganfall
+    - Hirnblutung
+    - Traumatic Brain injury
+    - über Prozeduren und Diagnosen
+    - wie viele patienten sind das? 
+    - aus dem training rausnehmen, wenns AUROC besser wird, beides zeigen
+2) Auf der Evaluationsseite:
+    subgruppe herzchirurgische patienten
+    - ICD-9 Procedure Codes: 3512, 3514, 3521, 3522, 3523, 3524, 3527, 3611, 3612, 3613, 3614, 3615, 3845 -
+    ICD-10 Procedure Codes: 0210093, 0210099, 021009W, 02100A3, 02100A8, 02100A9, 02100AW, 02100Z8, 02100Z9, 0211093, 0211099, 021109W, 02110A9, 02110AW, 02110Z3, 02110Z8, 02110Z9, 0212093, 0212099, 021209W, 02120AW, 02120Z9, 0213093, 0213099, 021309W, 02QF0ZZ, 02QG0ZZ, 02RF08Z, 02RF0JZ, 02RF0KZ, 02RG08Z, 02RG0JZ, 02RG0KZ, 02RJ08Z, 02RW0JZ, 02RX08Z, 02RX0JZ
+
+    subgruppe patienten über 70/75/80 use age
+    subgruppe saps saps.sql CHECK
+    subgruppe sofa sofa.sql CHECK
+    subgruppe icu typen, firstcareunit in icustays-table
+    subgruppe "exclude-special-patients": Patient nach Organtransplantation: Leber Niere Herz und Lunge, Schlaganfall, Hirnblutung, Traumatic Brain injury
+        - über Prozeduren und Diagnosen
+        -> (Leber: ICD-9 50.59, Niere: 55.6x, Herz: 37.5x, Lunge: 33.5x), Schlaganfall 
+        (433-434, 436), Hirnblutung (430-432) und TBI (z. B. 800-801, 850-854) erfolgen via LEFT JOIN auf d_icd_procedures/d_icd_diagnoses_indx mit WHERE NOT EXISTS

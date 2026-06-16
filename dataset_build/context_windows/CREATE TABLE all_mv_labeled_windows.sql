@@ -12,7 +12,7 @@ SELECT
       SELECT 1 FROM ce_approach.linkorder_treatment_events t
       WHERE t.icustay_id = w.icustay_id
   ) THEN TRUE ELSE FALSE END AS positive_sample,
-  -- Whether any VP administration starts in the current context window
+  -- Whether any VP administration starts in the current target window
   CASE WHEN EXISTS (
       SELECT 1 FROM ce_approach.linkorder_treatment_events t
       WHERE t.icustay_id = w.icustay_id

@@ -1,23 +1,42 @@
 import os
+import sys
 import numpy as np
 import pandas as pd
 from sklearn.isotonic import IsotonicRegression
 import xgboost as xgb
-from utils.db_interface import get_engine
+
+from sqlalchemy import create_engine
+
+sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension/calibration')
+sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension')
+
+print("CWD:", os.getcwd())
+print("\n--- sys.path ---")
+for p in sys.path:
+    print(p)
+
+
 from calibration.utils.calibrated_xgb_model import CalibratedXGBModel
 import joblib
 
-UNCALIBRATED_MODELS_DIR = "../models/uncalibrated"
-CALIBRATED_MODELS_DIR = "../models/calibrated"
+# UNCALIBRATED_MODELS_DIR = "../models/uncalibrated"
+# CALIBRATED_MODELS_DIR = "../models/calibrated"
+
+UNCALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/models_hr_extended_uc"
+CALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/models_hr_extended_c"
 
 def load_and_prepare_validation_data(table_name, drop_treatment_given=False, drop_only_2_values=False):
-    engine = get_engine()
+    
+    
+
+    DATABASE_URI = "postgresql+psycopg2://rirg2545@localhost:5434/mimic"
+    engine = create_engine(DATABASE_URI, future=True)
     df = pd.read_sql(f"""
-        SELECT * FROM ce_approach.{table_name}
+        SELECT * FROM evaluation.{table_name}
         WHERE split IN ('val', 'test')
     """, engine)
 
-    drop_cols = ["subject_id", "icustay_id", "context_start", "context_end"]
+    drop_cols = ["subject_id", "icustay_id", "context_start", "context_end", "hr_only_2_values"]
     df = df.drop(columns=[c for c in drop_cols if c in df.columns])
     
     
@@ -29,6 +48,7 @@ def load_and_prepare_validation_data(table_name, drop_treatment_given=False, dro
         df = df.drop(columns=["treatment_given"])
     if drop_only_2_values:
         df = df.drop(columns=["only_2_values"])
+        
     
     feature_cols = [c for c in df.columns if c not in excluded]
 
@@ -81,3 +101,40 @@ def load_calibrate_and_save_model(model_name, table_name, drop_treatment_given=F
     calibrated_model = CalibratedXGBModel(uncalibrated_model, iso)
     
     joblib.dump(calibrated_model, os.path.join(CALIBRATED_MODELS_DIR, f"{model_name}.pkl"))
+
+
+
+def load_calibrate_and_save_model_unbundled(
+    model_name,
+    table_name,
+    drop_treatment_given=False,
+    drop_only_2_values=False
+):
+    # --- Load validation data ---
+    x_val, y_val = load_and_prepare_validation_data(
+        table_name,
+        drop_treatment_given=drop_treatment_given,
+        drop_only_2_values=drop_only_2_values
+    )
+
+    # --- Load uncalibrated model (JSON = good) ---
+    model_path = os.path.join(UNCALIBRATED_MODELS_DIR, f"{model_name}.json")
+    booster = xgb.Booster()
+    booster.load_model(model_path)
+
+    # --- Predict ---
+    dval = xgb.DMatrix(x_val)
+    y_val_pred = booster.predict(dval)
+
+    # --- Calibrate ---
+    from sklearn.isotonic import IsotonicRegression
+    iso = IsotonicRegression(out_of_bounds="clip")
+    iso.fit(y_val_pred, y_val)
+
+    # --- Save ONLY calibration ---
+    joblib.dump(
+        iso,
+        os.path.join(CALIBRATED_MODELS_DIR, f"{model_name}_calibrator.pkl")
+    )
+
+    print(f"Saved calibrator for {model_name}")
