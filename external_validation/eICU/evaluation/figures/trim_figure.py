@@ -13,8 +13,8 @@ def trim_image(path, save_path=None):
     return img
 
 # Paths
-input_path = "/user/rirg2545/Projects/Hypotension-Project/src/hypotension-individual-threshold/ce_approach/evaluation/figures/composite_performance_figure.png"
-output_path = "/user/rirg2545/Projects/Hypotension-Project/src/hypotension-individual-threshold/ce_approach/evaluation/figures/composite_performance_figure_trimmed.png"
+input_path = "evaluation/figures/composite_performance_figure.png"
+output_path = "evaluation/figures/composite_performance_figure_trimmed.png"
 
 # Trim and save
 trim_image(input_path, save_path=output_path)
