@@ -24,7 +24,7 @@ from sqlalchemy import create_engine
 
 
 sys.path.append("..")
-DATABASE_URI = "postgresql+psycopg2://rirg2545@localhost:5433/eicu"
+DATABASE_URI = "postgresql+psycopg2://USER@localhost:5433/eicu"
 engine = create_engine(DATABASE_URI, future=True)
 
 CALIBRATED_MODELS_DIR = "../models/calibrated"

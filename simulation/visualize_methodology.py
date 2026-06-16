@@ -517,7 +517,7 @@ def main():
     # Final hold on last frame
     frames += [frames[-1]] * 8
 
-    out_path = "/dss/work/rirg2545/actionable-hypotension/simulation/sliding_window_methodology.mp4"
+    out_path = "YOUR-PATH/actionable-hypotension/simulation/sliding_window_methodology.mp4"
     print("Assembling MP4 …")
     assemble_video(frames, out_path, fps=4)
 

@@ -7,8 +7,8 @@ import xgboost as xgb
 
 from sqlalchemy import create_engine
 
-sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension/calibration')
-sys.path.insert(0, '/dss/work/rirg2545/actionable-hypotension')
+sys.path.insert(0, 'YOUR-PATH/actionable-hypotension/calibration')
+sys.path.insert(0, 'YOUR-PATH/actionable-hypotension')
 
 print("CWD:", os.getcwd())
 print("\n--- sys.path ---")
@@ -22,14 +22,14 @@ import joblib
 # UNCALIBRATED_MODELS_DIR = "../models/uncalibrated"
 # CALIBRATED_MODELS_DIR = "../models/calibrated"
 
-UNCALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/models_hr_extended_uc"
-CALIBRATED_MODELS_DIR = "/dss/work/rirg2545/actionable-hypotension/models_hr_extended_c"
+UNCALIBRATED_MODELS_DIR = "YOUR-PATH/actionable-hypotension/models_hr_extended_uc"
+CALIBRATED_MODELS_DIR = "YOUR-PATH/actionable-hypotension/models_hr_extended_c"
 
 def load_and_prepare_validation_data(table_name, drop_treatment_given=False, drop_only_2_values=False):
     
     
 
-    DATABASE_URI = "postgresql+psycopg2://rirg2545@localhost:5434/mimic"
+    DATABASE_URI = "postgresql+psycopg2://USER@localhost:5434/mimic"
     engine = create_engine(DATABASE_URI, future=True)
     df = pd.read_sql(f"""
         SELECT * FROM evaluation.{table_name}

@@ -20,7 +20,7 @@ from scipy.integrate import trapezoid
 from matplotlib.colors import Normalize
 from matplotlib.cm import ScalarMappable
 from sqlalchemy import create_engine
-DATABASE_URI = "postgresql+psycopg2://rirg2545@localhost:5434/mimic"
+DATABASE_URI = "postgresql+psycopg2://USER@localhost:5434/mimic"
 
 
 sys.path.append("..")
